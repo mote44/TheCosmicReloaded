@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - PlayerSound
+  - EnemyDetector
+  - Camera
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Enviroment
+  - Enemy
+  - Interactable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    uniqueID: 953448763
+    locked: 0
+  - name: BackGround
+    uniqueID: 505614779
+    locked: 0
+  - name: Ground
+    uniqueID: 4114921185
+    locked: 0
+  - name: BakLayer2Sub
+    uniqueID: 2652711037
+    locked: 0
+  - name: BackLayer2
+    uniqueID: 1176021681
+    locked: 0
+  - name: GroundOver
+    uniqueID: 407482363
+    locked: 0
+  - name: BackLayer1
+    uniqueID: 16975017
+    locked: 0
+  - name: BackFX
+    uniqueID: 2158795717
+    locked: 0
+  - name: Pickup
+    uniqueID: 641854967
+    locked: 0
+  - name: Enemy
+    uniqueID: 1975705657
+    locked: 0
+  - name: Player
+    uniqueID: 409064969
+    locked: 0
+  - name: FrontFX
+    uniqueID: 3473408395
+    locked: 0
+  - name: FrontLayer1
+    uniqueID: 3186012411
+    locked: 0
+  - name: FrontLayer2
+    uniqueID: 803897631
+    locked: 0
+  - name: FrontLayer2Top
+    uniqueID: 4059721707
+    locked: 0
+  - name: Over
+    uniqueID: 4184058077
+    locked: 0
+  - name: MapOver
+    uniqueID: 2212268907
+    locked: 0
