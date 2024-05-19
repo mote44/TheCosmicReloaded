@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 {
     //CODEAR: QUE LA VELOCIDAD EN Y SEA LA MITAD QUE EN X
 
+    ParticleSystem soundAreaParticle;
+    
     public Rigidbody2D body;
 
     public SpriteRenderer spriteRenderer;
@@ -53,55 +55,24 @@ public class PlayerController : MonoBehaviour
 
     float idleTime;
 
+    [Header("Camera Disable")]
+    public float radiusDesactivation;
+    public bool isInRange;
+
     //Variable para la mecanica del sonido
     private Transform enemy;
     public float lineOfSite;
     public EnemyTest chasing;
 
-    [SerializeField] private UI_Inventory uiInventory;
-    [SerializeField] private Inventory inventory;
-
 
     public Vector2 direction;
-
-    private void Awake()
-    {
-        inventory = new Inventory(UseItem);
-        //uiInventory.SetInventory(inventory);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collider)               //Coger Item
-    {
-        ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
-        if (itemWorld != null)
-        {
-            //Touching item
-            inventory.AddItem(itemWorld.GetItem());
-            itemWorld.DestroySelf();
-        }
-    }
-
-    private void UseItem(Item item)
-    {
-        switch (item.itemType)
-        {
-            case Item.ItemType.Noise:
-                //FlashGreen();                                               //AQUI IRIA EL METODO DE LO QUE HACE EL OBJETO
-                inventory.RemoveItem(new Item { itemType = Item.ItemType.Noise, amount = 1 });
-                break;
-            case Item.ItemType.Charge:
-                //FlashBlue();                                                //AQUI TAMBIEN
-                inventory.RemoveItem(new Item { itemType = Item.ItemType.Charge, amount = 1 });
-                break;
-        }
-    }
+   
 
     private void Start()
     {
-        uiInventory.SetInventory(inventory);
-
         isNormal = true;
 
+        soundAreaParticle = GetComponentInChildren<ParticleSystem>();
         //currentState = PlayerState.normal;
         //enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
@@ -118,23 +89,23 @@ public class PlayerController : MonoBehaviour
         if (isNormal && !isStealth) { currentState = PlayerState.normal; }
         if (!isNormal && isStealth) { currentState = PlayerState.stealth; }
 
-        if (Input.GetKeyDown(KeyCode.F) && isNormal)
+        if (Input.GetMouseButtonDown(1) && isNormal)//if (Input.GetKeyDown(KeyCode.F) && isNormal)
         {
             Debug.Log("Cambio a stealth");
             isNormal = false;
             isStealth = true;
         }
-        else if (Input.GetKeyDown(KeyCode.F) && !isNormal)
+        else if (Input.GetMouseButtonDown(1) && !isNormal)//else if (Input.GetKeyDown(KeyCode.F) && !isNormal)
         {
             Debug.Log("Cambio a normal");
             isNormal = true;
             isStealth = false;
         }
 
-        
-        
-        
-        
+
+        CameraDisable();     //FUNCIONA?????????
+
+
         /*
         float distanceFromEnemy = Vector2.Distance(enemy.position, transform.position);    //Cuando el enemigo entra en la zona del player, pasa a chasing
         if (distanceFromEnemy < lineOfSite && isNormal && direction != Vector2.zero)
@@ -142,7 +113,7 @@ public class PlayerController : MonoBehaviour
             chasing.isChasing = true;   // NO LO HACE SI HAY MAS DE UN ENEMIGO
         }
         */
-        
+
 
         //HandleSpriteFlip();
         //SetSprite();
@@ -152,6 +123,8 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSite);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, radiusDesactivation);      //Gizmo para la desactivacion de camaras
     }
 
 
@@ -312,6 +285,7 @@ public class PlayerController : MonoBehaviour
         body.velocity = direction * walkSpeed;
         HandleSpriteFlip();
         SetSprite();
+        if((body.velocity.x != 0 || body.velocity.y !=0) && soundAreaParticle.isStopped) { soundAreaParticle.Play(); }
     }
 
     private void Stealth()
@@ -320,6 +294,7 @@ public class PlayerController : MonoBehaviour
         body.velocity = direction * walkSpeedStealth;
         HandleSpriteFlipStealth();
         SetSpriteStealth();
+
     }
 
     void PlayerStateManagement()
@@ -336,6 +311,23 @@ public class PlayerController : MonoBehaviour
 
         }
 
+
+
+    }
+
+    private void CameraDisable()
+    {
+
+
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radiusDesactivation);
+        foreach (Collider2D col in hitColliders)
+        {
+
+            if (col.gameObject.CompareTag("Camera"))
+            {
+                isInRange = true;
+            }
+        }
 
 
     }

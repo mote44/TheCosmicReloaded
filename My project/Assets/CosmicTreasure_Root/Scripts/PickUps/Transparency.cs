@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Transparency : MonoBehaviour
 {
-    SpriteRenderer ren;
-    public GameObject player;
+    public EnemyTest enem;
+    public Transform player;
+    private Color newColor = new Color(1f, 1f, 1f, 0.35f);
+    private Color oldColor = new Color(1f, 1f, 1f, 1f);
 
     private bool isInvisible;
 
@@ -14,12 +16,14 @@ public class Transparency : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         isInvisible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKey(KeyCode.Alpha1)) //&& equippedTrans)
         {
             isInvisible = true;
@@ -30,17 +34,29 @@ public class Transparency : MonoBehaviour
                 TransAction();
             }
         }
+        */
+        
     }
 
-    private void TransAction()  //Cambia la transparencia del player
+    public void Use()   //Cambia la transparencia del player
     {
-        ren = GetComponent<SpriteRenderer>();
-        ren.color = new Color(1f, 1f, 1f, 0.35f);
+        Debug.Log("Destruyase");
+        SpriteRenderer spriteRenderer = player.GetComponent<SpriteRenderer>();
+        //Destroy(gameObject);
+        spriteRenderer.color = newColor;
+        // QUE EL ENEMIGO NO PUEDA VER AL PLAYER
+
+        //ren = GetComponent<SpriteRenderer>();
+        //ren.color = new Color(1f, 1f, 1f, 0.35f);
         Invoke("Return", 5);
+
     }
 
     private void Return()  //Vuelve a ser opaco el player
     {
-        ren.color = new Color(1f, 1f, 1f, 1f);
+        SpriteRenderer spriteRenderer = player.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = oldColor;
+        //ren.color = new Color(1f, 1f, 1f, 1f);
+        Destroy(gameObject);
     }
 }
