@@ -6,6 +6,7 @@ public class LaserDoorSwitch : MonoBehaviour
 {
 
     Animator anim;
+    Collider2D col;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +25,15 @@ public class LaserDoorSwitch : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
 
-            Debug.Log("LASERSWITCH");
+            //Debug.Log("LASERSWITCH");
             anim.Play("LaserDoorSwitchAnim");
             GameManager.Instance.LaserButtonClick();
+            
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        gameObject.GetComponent<Collider2D>().enabled = false;
     }
 }
