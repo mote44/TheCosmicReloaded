@@ -5,12 +5,14 @@ using UnityEngine;
 public class LaserDoorScript : MonoBehaviour
 {
     SpriteRenderer sprite;
+    Collider2D col;
     [SerializeField] Sprite[] spriteList; 
     
     // Start is called before the first frame update
     void Start()
     {
-       sprite = GetComponent<SpriteRenderer>(); 
+       sprite = GetComponent<SpriteRenderer>();
+        col = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,8 @@ public class LaserDoorScript : MonoBehaviour
         if (GameManager.Instance.toOpenLaserDoor == 2)
         {
             sprite.sprite = spriteList[2];
+            col.isTrigger = true;
+            
         }
     }
 }
