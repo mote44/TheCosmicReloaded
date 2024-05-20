@@ -11,6 +11,7 @@ public class Camera_Disable : MonoBehaviour
         if (controller.isInRange)
         {
             //La camara deja de moverse y no puede detectar al jugador
+            AudioManager.instance.PlaySFX(21);
         }
     }
 }

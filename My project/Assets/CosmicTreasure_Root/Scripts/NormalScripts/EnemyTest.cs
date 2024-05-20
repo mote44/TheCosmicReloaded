@@ -130,6 +130,7 @@ public class EnemyTest : MonoBehaviour
 
                     if (distanceFromPlayer > attackDistance)
                     {
+                        AudioManager.instance.PlaySFX(18);
                         isChasing = true;
                         Debug.Log("Detecto al player");
                     }
@@ -162,6 +163,15 @@ public class EnemyTest : MonoBehaviour
         }
         */
         EnemyStateManagement();
+        
+    }
+
+    private void Sounds()
+    {
+        if (isShooting)
+        {
+            AudioManager.instance.PlaySFX(16);
+        }
     }
 
     private void AlertEnemies()

@@ -614,8 +614,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -0.6788502, y: 7.8483, z: 0}
     m_Extent: {x: 17.75415, y: 11.837501, z: 0}
+=======
+    m_Center: {x: -0.67459965, y: 7.8363, z: 0}
+    m_Extent: {x: 17.7557, y: 11.8328, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9776,8 +9781,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.1659, y: 2.8006, z: 0}
     m_Extent: {x: 5.6067, y: 4.6267, z: 0}
+=======
+    m_Center: {x: -1.1586499, y: 2.79445, z: 0}
+    m_Extent: {x: 5.61765, y: 4.6199503, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -15311,8 +15321,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.1703498, y: 2.80315, z: 0}
     m_Extent: {x: 5.61075, y: 4.61915, z: 0}
+=======
+    m_Center: {x: -1.1626, y: 2.78955, z: 0}
+    m_Extent: {x: 5.6217, y: 4.62405, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -30462,8 +30477,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.1696, y: 2.7946, z: 0}
     m_Extent: {x: 5.6149, y: 4.6235, z: 0}
+=======
+    m_Center: {x: -1.1659501, y: 2.7974498, z: 0}
+    m_Extent: {x: 5.60905, y: 4.6272497, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -32556,10 +32576,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.808
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -33624,8 +33644,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: 17.056648, y: -2.1743507, z: 0}
     m_Extent: {x: 188.45056, y: 105.322556, z: 0}
+=======
+    m_Center: {x: 17.05655, y: -2.1780014, z: 0}
+    m_Extent: {x: 188.44505, y: 105.3264, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34916,8 +34941,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.15955, y: 2.79465, z: 0}
     m_Extent: {x: 5.6150503, y: 4.62805, z: 0}
+=======
+    m_Center: {x: -1.165, y: 2.8004498, z: 0}
+    m_Extent: {x: 5.6123, y: 4.62005, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -38121,8 +38151,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.1652999, y: 2.7993498, z: 0}
     m_Extent: {x: 5.6162, y: 4.62115, z: 0}
+=======
+    m_Center: {x: -1.1654499, y: 2.80345, z: 0}
+    m_Extent: {x: 5.6129503, y: 4.62685, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -63123,10 +63158,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -80371,8 +80406,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: 32.706947, y: 1.9004002, z: 0}
     m_Extent: {x: 21.974249, y: 13.5062, z: 0}
+=======
+    m_Center: {x: 32.70085, y: 1.9029503, z: 0}
+    m_Extent: {x: 21.96575, y: 13.51145, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -94064,8 +94104,13 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
+<<<<<<< Updated upstream
     m_Center: {x: -1.15995, y: 2.79795, z: 0}
     m_Extent: {x: 5.61965, y: 4.63215, z: 0}
+=======
+    m_Center: {x: -1.1663501, y: 2.79535, z: 0}
+    m_Extent: {x: 5.6192503, y: 4.62645, z: 0}
+>>>>>>> Stashed changes
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -102651,11 +102696,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5681089610834566818, guid: 5f50de5446bbb454ebfed4e5952a6bac, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -53.34
       objectReference: {fileID: 0}
     - target: {fileID: 5681089610834566818, guid: 5f50de5446bbb454ebfed4e5952a6bac, type: 3}
       propertyPath: m_LocalPosition.y
       value: -44.7
+=======
+      value: -6.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681089610834566818, guid: 5f50de5446bbb454ebfed4e5952a6bac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -17.1
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 5681089610834566818, guid: 5f50de5446bbb454ebfed4e5952a6bac, type: 3}
       propertyPath: m_LocalPosition.z

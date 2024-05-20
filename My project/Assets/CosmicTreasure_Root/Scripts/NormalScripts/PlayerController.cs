@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && isNormal)//if (Input.GetKeyDown(KeyCode.F) && isNormal)
         {
             Debug.Log("Cambio a stealth");
+            AudioManager.instance.PlaySFX(19);
             isNormal = false;
             isStealth = true;
         }
@@ -211,6 +212,7 @@ public class PlayerController : MonoBehaviour
             int frame = totalFrames % directionSprites.Count;
 
             spriteRenderer.sprite = directionSprites[frame];
+            
         }
         else
         {
