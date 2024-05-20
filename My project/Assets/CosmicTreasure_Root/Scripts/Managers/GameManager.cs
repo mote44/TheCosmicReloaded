@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
     public int points;
     public int winPoints;
 
-    public bool[] keyChain;
+    public bool[] keyChain; //Llavero
+    public int toOpenLaserDoor;
 
     private void Awake()
     {
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         keyChain[0] = true; //El valor 0 reservado para transparentar paredes genéricas
+        toOpenLaserDoor = 0;
     }
 
     private void Update()
@@ -44,5 +46,12 @@ public class GameManager : MonoBehaviour
     public void AddKey(int keyType)
     {
         keyChain[keyType] = true; //Pasa a true el bool del array keyChain
+    }
+
+    public void LaserButtonClick()
+    {
+        toOpenLaserDoor++;
+
+        
     }
 }
