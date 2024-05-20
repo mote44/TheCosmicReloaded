@@ -27,12 +27,11 @@ public class EnemySpritesManager : MonoBehaviour
     {
         direction = rb.velocity;
         Debug.Log("direction " + direction);
-        
+        GetSpriteDirection();
         father = GetComponentInParent<Transform>();
         fatherRotZ = father.localRotation.z;
         gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(0,0,-fatherRotZ);
         HandleSpriteFlip();
-        GetSpriteDirection(direction);
     }
 
     void HandleSpriteFlip()
@@ -48,13 +47,13 @@ public class EnemySpritesManager : MonoBehaviour
 
     }
 
-    void GetSpriteDirection(Vector3 dir)
+    void GetSpriteDirection()
     {
 
 
-        if (dir.y > 0) //North
+        if (direction.y > 0) //North
         {
-            if (Mathf.Abs(dir.x) > 0) //east or west
+            if (Mathf.Abs(direction.x) > 0) //east or west
             {
                 Debug.Log("Entra animacion");
                 anim.SetBool("Mov_NE", true);
@@ -74,9 +73,9 @@ public class EnemySpritesManager : MonoBehaviour
                 anim.SetBool("Mov_E", false);
             }
         }
-        else if (dir.y < 0) //South
+        else if (direction.y < 0) //South
         {
-            if (Mathf.Abs(dir.x) > 0) //east or west
+            if (Mathf.Abs(direction.x) > 0) //east or west
             {
                 anim.SetBool("Mov_NE", false);
                 anim.SetBool("Mov_N", false);
@@ -95,7 +94,7 @@ public class EnemySpritesManager : MonoBehaviour
         }
         else //neutral
         {
-            if (Mathf.Abs(dir.x) > 0) //east or west
+            if (Mathf.Abs(direction.x) > 0) //east or west
             {
                 anim.SetBool("Mov_NE", false);
                 anim.SetBool("Mov_N", false);
