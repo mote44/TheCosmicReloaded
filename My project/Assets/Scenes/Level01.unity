@@ -614,8 +614,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.67190075, y: 7.837, z: 0}
-    m_Extent: {x: 17.7541, y: 11.8386, z: 0}
+    m_Center: {x: -0.67350006, y: 7.8458, z: 0}
+    m_Extent: {x: 17.7632, y: 11.8329, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3351,6 +3351,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4853915811665865805, guid: 00cd659edb4e0974ea576cf1f9d39f20, type: 3}
   m_PrefabInstance: {fileID: 67824164}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &67955018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67955019}
+  m_Layer: 0
+  m_Name: Roof_Hangar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &67955019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67955018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21, y: -15.5, z: 2.2735958}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 58
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &68532312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6636600430387367172, guid: 8528c8d0964e5ba45bddf375ad4e41c8, type: 3}
@@ -9737,8 +9768,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.1599, y: 2.7992, z: 0}
-    m_Extent: {x: 5.6191998, y: 4.6306, z: 0}
+    m_Center: {x: -1.1681502, y: 2.78985, z: 0}
+    m_Extent: {x: 5.60865, y: 4.62265, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -15272,8 +15303,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.16415, y: 2.7909, z: 0}
-    m_Extent: {x: 5.6227503, y: 4.624, z: 0}
+    m_Center: {x: -1.1597002, y: 2.7972999, z: 0}
+    m_Extent: {x: 5.6164, y: 4.6261, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -19076,6 +19107,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaldosaAnimNE000
       objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20298,6 +20337,14 @@ PrefabInstance:
     - target: {fileID: 4861462658858421334, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
       propertyPath: m_Name
       value: BaldosaAnimNE000 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22208,6 +22255,14 @@ PrefabInstance:
     - target: {fileID: 4861462658858421334, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
       propertyPath: m_Name
       value: BaldosaAnimNE000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30395,8 +30450,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.16555, y: 2.80115, z: 0}
-    m_Extent: {x: 5.61255, y: 4.6283503, z: 0}
+    m_Center: {x: -1.1571, y: 2.80345, z: 0}
+    m_Extent: {x: 5.6125, y: 4.62665, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -31255,6 +31310,14 @@ PrefabInstance:
     - target: {fileID: 4861462658858421334, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
       propertyPath: m_Name
       value: BaldosaAnimNE000 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33081,6 +33144,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaldosaAnimNE000
       objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33541,8 +33612,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 17.059647, y: -2.1667023, z: 0}
-    m_Extent: {x: 188.44075, y: 105.3199, z: 0}
+    m_Center: {x: 17.052849, y: -2.175949, z: 0}
+    m_Extent: {x: 188.43875, y: 105.32395, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -34833,8 +34904,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.16745, y: 2.7969499, z: 0}
-    m_Extent: {x: 5.61895, y: 4.62115, z: 0}
+    m_Center: {x: -1.1585, y: 2.7948, z: 0}
+    m_Extent: {x: 5.6133003, y: 4.6238003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -37686,6 +37757,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaldosaAnimNE000
       objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38029,8 +38108,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.1633501, y: 2.7986999, z: 0}
-    m_Extent: {x: 5.61175, y: 4.625, z: 0}
+    m_Center: {x: -1.1688001, y: 2.7986999, z: 0}
+    m_Extent: {x: 5.6118, y: 4.626, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -41026,6 +41105,14 @@ PrefabInstance:
     - target: {fileID: 4861462658858421334, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
       propertyPath: m_Name
       value: BaldosaAnimNE000 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53352,6 +53439,14 @@ PrefabInstance:
     - target: {fileID: 4861462658858421334, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
       propertyPath: m_Name
       value: BaldosaAnimNE000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74923,6 +75018,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaldosaAnimNE000
       objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80194,8 +80297,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 32.7068, y: 1.9017, z: 0}
-    m_Extent: {x: 21.9752, y: 13.512, z: 0}
+    m_Center: {x: 32.71075, y: 1.9022999, z: 0}
+    m_Extent: {x: 21.96355, y: 13.5054, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -89762,6 +89865,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaldosaAnimNE000
       objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -93802,8 +93913,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.1683998, y: 2.80305, z: 0}
-    m_Extent: {x: 5.619, y: 4.62195, z: 0}
+    m_Center: {x: -1.1707499, y: 2.8011, z: 0}
+    m_Extent: {x: 5.6122503, y: 4.6198, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -101284,6 +101395,14 @@ PrefabInstance:
     - target: {fileID: 4861462658858421334, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
       propertyPath: m_Name
       value: BaldosaAnimNE000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994882064236772371, guid: e588d7d4b02240949ad31e28bf05efc2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -180046111
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
