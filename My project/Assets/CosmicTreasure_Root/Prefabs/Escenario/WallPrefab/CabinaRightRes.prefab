@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 7923740977605078219}
   - component: {fileID: 1258783707560841942}
   - component: {fileID: -8636355481530035152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CabinaRightRes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
