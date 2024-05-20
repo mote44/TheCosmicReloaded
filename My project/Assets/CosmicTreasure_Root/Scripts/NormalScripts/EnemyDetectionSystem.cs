@@ -16,6 +16,7 @@ public class EnemyDetectionSystem : MonoBehaviour
         if (player.direction != Vector2.zero)
         {
             lastPosition = transform.position;
+           // Debug.Log("PlayerDir " + lastPosition);
         }
          
     }
@@ -28,6 +29,7 @@ public class EnemyDetectionSystem : MonoBehaviour
             Debug.Log("Enemigo detecta");
             
             EnemyTest localEnemy = collision.gameObject.GetComponent<EnemyTest>();
+            enemy = localEnemy;
             localEnemy.isHearing = true;
             localEnemy.isPatroling = false;
             localEnemy.ChasePlayerSound(lastPosition);
@@ -41,6 +43,7 @@ public class EnemyDetectionSystem : MonoBehaviour
         {
             Debug.Log("Enemigo sale");
             EnemyTest localEnemy = collision.gameObject.GetComponent<EnemyTest>();
+            enemy = localEnemy;
             localEnemy.isChasing = false;
             Invoke("PatrolAgain", 2f);
             //localEnemy.isHearing = false;     //Te oye bien, pero cuando el enemigo sale del collider, no vuelve al patroling a menos que pongas el hearing a falso, pero si lo haces, el enemigo ya no va hasta el final

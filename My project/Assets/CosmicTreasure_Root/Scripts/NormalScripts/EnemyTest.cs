@@ -73,10 +73,9 @@ public class EnemyTest : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
-        
         currentState = EnemyState.patroling;
-
         isDetected = false;
+        detection = player.GetComponentInChildren<EnemyDetectionSystem>();
 
         //PATHFINDING
         agent = GetComponent<NavMeshAgent>();
