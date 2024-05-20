@@ -44,6 +44,7 @@ public class Transparency : MonoBehaviour
         SpriteRenderer spriteRenderer = player.GetComponent<SpriteRenderer>();
         //Destroy(gameObject);
         spriteRenderer.color = newColor;
+        enem.range = 0.1f;
         // QUE EL ENEMIGO NO PUEDA VER AL PLAYER
 
         //ren = GetComponent<SpriteRenderer>();
@@ -56,6 +57,7 @@ public class Transparency : MonoBehaviour
     {
         SpriteRenderer spriteRenderer = player.GetComponent<SpriteRenderer>();
         spriteRenderer.color = oldColor;
+        enem.range = 8f;
         //ren.color = new Color(1f, 1f, 1f, 1f);
         Destroy(gameObject);
     }

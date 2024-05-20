@@ -36,7 +36,7 @@ public class EnemyTest : MonoBehaviour
     [Header("Fov Point")]
     public float fovAngle = 90f;
     public Transform fovPoint;
-    public float range = 8;
+    public float range = 8f;
     public LayerMask playerLayer;
 
     [Header("Patrol")]
