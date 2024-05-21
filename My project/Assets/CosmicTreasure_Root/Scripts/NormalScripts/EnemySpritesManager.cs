@@ -54,10 +54,11 @@ public class EnemySpritesManager : MonoBehaviour
     {
 
 
-        if((fatherRotZ > -90 /360)|| (fatherRotZ < 90 / 360))//if (direction.y > 0) //North         //-0.25 / 0.25
+        if((fatherRotZ > -90f / 180) || (fatherRotZ < 90f / 180))//if (direction.y > 0) //North         //-0.25 / 0.25
         {
-            anim.SetFloat("MoveY", 1);
-            if ((fatherRotZ > 0.1f / 360) && (fatherRotZ < 180f / 360)) //east or west
+            anim.SetFloat("Move_Y", 1f);
+            
+            if ((fatherRotZ > 0.1f / 180) && (fatherRotZ < 180f / 180)) //east or west          //0.00027 /.5
             {
                 Debug.Log("Entra animacion");
                 //anim.SetBool("Mov_NE", true);
@@ -69,7 +70,7 @@ public class EnemySpritesManager : MonoBehaviour
                 
 
             }
-            else if ((fatherRotZ < -0.1f / 360) && (fatherRotZ > -180f / 360))//neutral X
+            else if ((fatherRotZ < -0.1f / 180) && (fatherRotZ > -180f / 180))//neutral X
             {
                 Debug.Log("Entra animacion neutral"); //Lo contrario de east es west
                 //anim.SetBool("Mov_NE", false);
@@ -82,10 +83,11 @@ public class EnemySpritesManager : MonoBehaviour
 
             }
         }
-        else if ((fatherRotZ > 90 / 360) || (fatherRotZ < -90 / 360)) //South
+        else if ((fatherRotZ > 90 / 180) || (fatherRotZ < -90 / 180)) //South
         {
-            anim.SetFloat("MoveY", -1);
-            if ((fatherRotZ > 0.1f / 360) && (fatherRotZ < 180f / 360)) //east or west
+            Debug.Log("SUR");
+            anim.SetFloat("Move_Y", -1f);
+            if ((fatherRotZ > 0.1f / 180) && (fatherRotZ < 180f / 180)) //east or west
             {
                 //anim.SetBool("Mov_NE", false);
                 //anim.SetBool("Mov_N", false);
@@ -96,7 +98,7 @@ public class EnemySpritesManager : MonoBehaviour
                 
 
             }
-            else if ((fatherRotZ < 0.1f / 360) && (fatherRotZ < -180f / 360))
+            else if ((fatherRotZ < 0.1f / 180) && (fatherRotZ < -180f / 180))
             {
                 //anim.SetBool("Mov_NE", false);
                 //anim.SetBool("Mov_N", false);
