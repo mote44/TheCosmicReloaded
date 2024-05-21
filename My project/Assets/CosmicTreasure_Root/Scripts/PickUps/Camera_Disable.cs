@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class Camera_Disable : MonoBehaviour
 {
-    PlayerController controller;
+    public PlayerController controller;
 
-    private void CameraOff()
+    FOVPoint fov;
+
+    private void Update()
+    {
+        CameraOff();
+    }
+
+    public void CameraOff()
     {
         if (controller.isInRange)
         {
             //La camara deja de moverse y no puede detectar al jugador
+            fov.range = 0.1f;
+            fov.rotationSpeed = 0.0f;
+
         }
     }
 }
