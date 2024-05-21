@@ -18,7 +18,7 @@ public class RoofWithChildren : MonoBehaviour
     {
         if (collision.CompareTag("Player") && GameManager.Instance.keyChain[keyNeeded] == true)
         {
-            for (int i = 0; i < sprite.Length - 1; i++) { sprite[i].color = new Color(1, 1, 1, transparency); }
+            for (int i = 0; i < sprite.Length; i++) { sprite[i].color = new Color(1, 1, 1, transparency); }
         }
         
 
@@ -28,7 +28,7 @@ public class RoofWithChildren : MonoBehaviour
     {
         if (collision.CompareTag("Player") && GameManager.Instance.keyChain[keyNeeded] == true)
         {
-            for (int i = 0; i < sprite.Length - 1; i++) { sprite[i].color = new Color(1, 1, 1, 1); }
+            for (int i = 0; i < sprite.Length; i++) { sprite[i].color = new Color(1, 1, 1, 1); }
         }
         
     }
