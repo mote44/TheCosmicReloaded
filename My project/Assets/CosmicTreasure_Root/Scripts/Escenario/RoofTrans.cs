@@ -10,7 +10,7 @@ public class RoofTrans : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       sprite = gameObject.GetComponentInParent<SpriteRenderer>();
+       sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
