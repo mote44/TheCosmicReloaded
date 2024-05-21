@@ -11,6 +11,8 @@ public class EnemyTest : MonoBehaviour
 
     EnemyDetectionSystem detection;
 
+    public GameObject lose;
+
     PlayerController playerController;
 
     private Vector2 moveDirection;
@@ -143,6 +145,7 @@ public class EnemyTest : MonoBehaviour
                     {
                         isHearing = false;
                         isShooting = true;
+                        lose.SetActive(true);
                         Debug.Log("Estoy atacando");
                     }
 
