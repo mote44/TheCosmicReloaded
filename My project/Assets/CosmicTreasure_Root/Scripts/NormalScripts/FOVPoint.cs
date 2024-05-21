@@ -99,6 +99,14 @@ public class FOVPoint : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, radiusAlert);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            AudioManager.instance.PlaySFX(3);
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

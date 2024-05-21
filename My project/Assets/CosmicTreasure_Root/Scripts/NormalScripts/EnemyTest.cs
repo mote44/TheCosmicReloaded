@@ -9,7 +9,9 @@ public class EnemyTest : MonoBehaviour
     //CODEAR: ARREGLAR EL RANDOM PATROL, ANIMACION MUERTE PLAYER, QUE USE EL PATHFINDING PARA EL PATROL NORMAL
     // QUE ESPERE 3 SEG ENTRE PUNTO Y PUNTO EN EL PATROL, ARREGLAR LOS ESTADOS CUANDO HAY MÁS DE UN ENEMIGO
 
+    //Variables para los sonidos
     private bool isPlayed;
+    private bool isPlayedPatrol;
 
     EnemyDetectionSystem detection;
 
@@ -170,6 +172,10 @@ public class EnemyTest : MonoBehaviour
                     isShooting = false;
                     isPlayed = false;
                     Debug.Log("We dont seen");
+                    if (!isPlayedPatrol)
+                    {
+
+                    }
                 }
             }
             
