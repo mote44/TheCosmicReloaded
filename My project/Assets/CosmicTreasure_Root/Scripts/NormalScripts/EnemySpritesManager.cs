@@ -54,7 +54,7 @@ public class EnemySpritesManager : MonoBehaviour
     {
 
 
-        if((fatherRotZ > -90 /360)|| (fatherRotZ < 90 / 360))//if (direction.y > 0) //North
+        if((fatherRotZ > -90 /360)|| (fatherRotZ < 90 / 360))//if (direction.y > 0) //North         //-0.25 / 0.25
         {
             anim.SetFloat("MoveY", 1);
             if ((fatherRotZ > 0.1f / 360) && (fatherRotZ < 180f / 360)) //east or west
@@ -69,7 +69,7 @@ public class EnemySpritesManager : MonoBehaviour
                 
 
             }
-            else if ((fatherRotZ < 0.1f / 360) && (fatherRotZ < -180f / 360))//neutral X
+            else if ((fatherRotZ < -0.1f / 360) && (fatherRotZ > -180f / 360))//neutral X
             {
                 Debug.Log("Entra animacion neutral"); //Lo contrario de east es west
                 //anim.SetBool("Mov_NE", false);
