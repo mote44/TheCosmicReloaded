@@ -105,8 +105,8 @@ public class EnemyTest : MonoBehaviour
         if (isChasing && isShooting) { currentState = EnemyState.attacking; }
         */
 
-        anim.SetFloat("MoveX", moveDirection.x);
-        anim.SetFloat("MoveY", moveDirection.y);
+        //anim.SetFloat("MoveX", moveDirection.x);
+        //anim.SetFloat("MoveY", moveDirection.y);
 
         if (!isChasing && !isShooting && !isHearing) { currentState = EnemyState.patroling; }   //Normal
         if(isChasing && !isShooting) { currentState = EnemyState.chasing; }                     //Si esta persiguiendo, no en distanciaShoot
