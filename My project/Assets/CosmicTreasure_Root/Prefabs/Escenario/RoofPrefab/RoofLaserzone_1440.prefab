@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 660484958022545907}
   - component: {fileID: 8130422452355516275}
   - component: {fileID: 8356144785258333433}
+  - component: {fileID: 4314225667521494786}
   - component: {fileID: -7868860673576368497}
   m_Layer: 0
   m_Name: RoofLaserzone_1440
@@ -231,6 +232,20 @@ PolygonCollider2D:
       - {x: -11.250462, y: -1.9565183}
       - {x: 7.2611446, y: -11.501306}
   m_UseDelaunayMesh: 0
+--- !u!114 &4314225667521494786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2454501192029214962}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce3e7e6cac77044fb813338edcb5290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transparency: 0.2
+  keyNeeded: 0
 --- !u!114 &-7868860673576368497
 MonoBehaviour:
   m_ObjectHideFlags: 0
