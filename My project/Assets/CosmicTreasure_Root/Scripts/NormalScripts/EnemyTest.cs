@@ -9,6 +9,8 @@ public class EnemyTest : MonoBehaviour
     //CODEAR: ARREGLAR EL RANDOM PATROL, ANIMACION MUERTE PLAYER, QUE USE EL PATHFINDING PARA EL PATROL NORMAL
     // QUE ESPERE 3 SEG ENTRE PUNTO Y PUNTO EN EL PATROL, ARREGLAR LOS ESTADOS CUANDO HAY MÁS DE UN ENEMIGO
 
+    private bool isPlayed;
+
     EnemyDetectionSystem detection;
 
     public GameObject lose;
@@ -138,9 +140,18 @@ public class EnemyTest : MonoBehaviour
 
                     if (distanceFromPlayer > attackDistance)
                     {
+
                         isChasing = true;
+                        //AudioManager.instance.PlaySFX(18);
                         Debug.Log("Detecto al player");
+
+                        if (!isPlayed)
+                        {
+                            AudioManager.instance.PlaySFX(18);
+                            isPlayed = true;
+                        }
                     }
+
                     else
                     {
                         isHearing = false;
@@ -157,6 +168,7 @@ public class EnemyTest : MonoBehaviour
                 {
                     isChasing = false;
                     isShooting = false;
+                    isPlayed = false;
                     Debug.Log("We dont seen");
                 }
             }
