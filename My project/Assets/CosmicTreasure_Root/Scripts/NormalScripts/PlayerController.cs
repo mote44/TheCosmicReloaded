@@ -8,7 +8,6 @@ using static EnemyTest;
 
 public class PlayerController : MonoBehaviour
 {
-    //CODEAR: QUE LA VELOCIDAD EN Y SEA LA MITAD QUE EN X
 
     ParticleSystem soundAreaParticle;
     
@@ -92,6 +91,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && isNormal)//if (Input.GetKeyDown(KeyCode.F) && isNormal)
         {
             Debug.Log("Cambio a stealth");
+            AudioManager.instance.PlaySFX(19);
             isNormal = false;
             isStealth = true;
         }
@@ -140,6 +140,7 @@ public class PlayerController : MonoBehaviour
             int frame = totalFrames % directionSprites.Count;
 
             spriteRenderer.sprite = directionSprites[frame];
+            //AudioManager.instance.PlaySFX(22);
         }
         else
         {
@@ -286,6 +287,7 @@ public class PlayerController : MonoBehaviour
         HandleSpriteFlip();
         SetSprite();
         if((body.velocity.x != 0 || body.velocity.y !=0) && soundAreaParticle.isStopped) { soundAreaParticle.Play(); }
+
     }
 
     private void Stealth()

@@ -45,6 +45,7 @@ public class Transparency : MonoBehaviour
         //Destroy(gameObject);
         spriteRenderer.color = newColor;
         enem.range = 0.1f;
+        AudioManager.instance.PlaySFX(23);
         // QUE EL ENEMIGO NO PUEDA VER AL PLAYER
 
         //ren = GetComponent<SpriteRenderer>();

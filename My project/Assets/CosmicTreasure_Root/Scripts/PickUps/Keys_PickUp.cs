@@ -31,6 +31,7 @@ public class Keys_PickUp : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            AudioManager.instance.PlaySFX(44);
             GameManager.Instance.AddKey(keyOperator);
             keyObjectOff[keyOperator].GetComponent<Image>().sprite = keySpritesOn[keyOperator];
             Destroy(gameObject);

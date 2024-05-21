@@ -10,8 +10,9 @@ public class EnemyTest : MonoBehaviour
     // QUE ESPERE 3 SEG ENTRE PUNTO Y PUNTO EN EL PATROL, ARREGLAR LOS ESTADOS CUANDO HAY MÁS DE UN ENEMIGO
 
     //Variables para los sonidos
-    private bool isPlayed;
-    private bool isPlayedPatrol;
+    private bool isPlayed = false;
+    private bool isPlayedPatrol = false;
+    private bool isPlayedShot = false;
 
     EnemyDetectionSystem detection;
 
@@ -149,7 +150,9 @@ public class EnemyTest : MonoBehaviour
 
                         if (!isPlayed)
                         {
-                            AudioManager.instance.PlaySFX(18);
+                            //AudioManager.instance.PlaySFX(18);
+                            AudioManager.instance.PlaySFX(24);
+                            isPlayedPatrol = false;
                             isPlayed = true;
                         }
                     }
@@ -160,6 +163,13 @@ public class EnemyTest : MonoBehaviour
                         isShooting = true;
                         lose.SetActive(true);
                         Debug.Log("Estoy atacando");
+
+                        if (!isPlayedShot)
+                        {
+                            AudioManager.instance.PlaySFX(16);
+                            AudioManager.instance.PlaySFX(47);
+                            isPlayedShot = true;
+                        }
                     }
 
                     // Todos los enemigos con el tag "enemy" && que hagan trigger con el área de la habitación, pasan a modo chasing (isChasing = true)
@@ -172,9 +182,10 @@ public class EnemyTest : MonoBehaviour
                     isShooting = false;
                     isPlayed = false;
                     Debug.Log("We dont seen");
-                    if (!isPlayedPatrol)
+                    if (!isPlayedPatrol)     //No lo hace
                     {
-
+                        AudioManager.instance.PlaySFX(13);
+                        isPlayedPatrol = true;
                     }
                 }
             }

@@ -10,6 +10,7 @@ public class X_Sustance : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            AudioManager.instance.PlaySFX(46);
             win.SetActive(true);
         }
     }

@@ -16,6 +16,7 @@ public class PickUp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AudioManager.instance.PlaySFX(31);
             for (int i = 0; i <inventory.slots.Length; i++)
             {
                 if (inventory.isFull[i] == false)
