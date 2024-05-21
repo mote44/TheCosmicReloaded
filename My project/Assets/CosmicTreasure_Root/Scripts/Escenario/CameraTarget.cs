@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class CameraTarget : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class CameraTarget : MonoBehaviour
     bool mapEnabled;
 
     [SerializeField] VolumeProfile volumePost;
+    [SerializeField] Image img;
 
     
 
@@ -72,6 +74,7 @@ public class CameraTarget : MonoBehaviour
         if (volumePost.TryGet(out LiftGammaGain gainMap)) { gainMap.gamma.value = new Vector4(.5f, .7f, .8f, 1); }
         if (volumePost.TryGet(out PaniniProjection paniniProjection)) { paniniProjection.distance.value = 1; }
         if (volumePost.TryGet(out ChromaticAberration chromaticAberration)) { chromaticAberration.intensity.value = .5f; }
+        img.color = new Color(.5f, .5f, .5f, 1);
 
         for (int i = 0; i <= textObjects.Length-1; i++)
         {
@@ -88,6 +91,7 @@ public class CameraTarget : MonoBehaviour
         if (volumePost.TryGet(out LiftGammaGain gainMap)) { gainMap.gamma.value = new Vector4(1, 1, 1, 0); }
         if (volumePost.TryGet(out PaniniProjection paniniProjection)) { paniniProjection.distance.value = 0; }
         if (volumePost.TryGet(out ChromaticAberration chromaticAberration)) { chromaticAberration.intensity.value = 0; }
+        img.color = new Color(1, 1, 1, 1);
 
         for (int i = 0; i <= textObjects.Length-1; i++)
         {
