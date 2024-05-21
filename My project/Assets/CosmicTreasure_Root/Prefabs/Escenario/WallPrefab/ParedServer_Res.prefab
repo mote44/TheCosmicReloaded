@@ -129,10 +129,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1906066853
-  m_SortingLayer: 6
+  m_SortingLayerID: 16975017
+  m_SortingLayer: 7
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 536c473f242a4c349b33dad970c5b887, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47512b7939732c146a48c4202d3f7d6d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,7 +178,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.29217112, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 10.56, y: 8.12}
     newSize: {x: 10.56, y: 8.12}
     adaptiveTilingThreshold: 0.5
@@ -187,10 +187,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.72303337, y: 0.3391526}
-      - {x: 0.005540684, y: -0.0030326843}
-      - {x: 7.4864917, y: 3.730727}
-      - {x: 6.648843, y: 4.038941}
+    - - {x: -2.9400966, y: -3.615609}
+      - {x: -2.2414827, y: -4.0776353}
+      - {x: 5.329349, y: -0.313915}
+      - {x: 4.3718586, y: -0.005701542}
   m_UseDelaunayMesh: 0
 --- !u!114 &9061009839854401299
 MonoBehaviour:
@@ -295,8 +295,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.1626499, y: 2.7988, z: 0}
-    m_Extent: {x: 5.61075, y: 4.6291, z: 0}
+    m_Center: {x: -1.16225, y: 2.79855, z: 0}
+    m_Extent: {x: 5.60755, y: 4.6265497, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

@@ -13,11 +13,14 @@ public class EnemyTest : MonoBehaviour
 
     PlayerController playerController;
 
+    private Vector2 moveDirection;
+    public Rigidbody2D rb;
+
     public NavMeshAgent agent;
     public enum EnemyState { patroling, randomPatroling, chasing, attacking, hearing}
     Vector2 dir;
     public Vector2 direction;
-    private Animator anim;
+    public Animator anim;
 
     [Header("Alert Enemies")]          //Que el enemigo alerte a sus compañeros
     public float radiusAlert;
@@ -101,6 +104,9 @@ public class EnemyTest : MonoBehaviour
         if (isChasing && !isShooting) { currentState = EnemyState.chasing; }
         if (isChasing && isShooting) { currentState = EnemyState.attacking; }
         */
+
+        anim.SetFloat("MoveX", moveDirection.x);
+        anim.SetFloat("MoveY", moveDirection.y);
 
         if (!isChasing && !isShooting && !isHearing) { currentState = EnemyState.patroling; }   //Normal
         if(isChasing && !isShooting) { currentState = EnemyState.chasing; }                     //Si esta persiguiendo, no en distanciaShoot
