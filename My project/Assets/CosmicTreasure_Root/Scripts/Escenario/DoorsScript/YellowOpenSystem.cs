@@ -33,7 +33,7 @@ public class YellowOpenSystem : MonoBehaviour
         if (collision.CompareTag("Player") && GameManager.Instance.keyChain[keyToOpen] == true)
         {
             anim.Play("DoorYellowOpenAnim");
-            AudioManager.instance.PlaySFX(33);
+            AudioManager.instance.PlaySFX(28);
             //shapeRenderer.color = new Color(1f, 1f, 1f, 0f);         //Apaga el techo
             closeCol.GetComponent<Collider2D>().enabled = false;
 
@@ -46,7 +46,7 @@ public class YellowOpenSystem : MonoBehaviour
         if (collision.CompareTag("Player") && GameManager.Instance.keyChain[keyToOpen] == true)
         {
             anim.Play("DoorYellowCloseAnim");
-            AudioManager.instance.PlaySFX(33);
+            AudioManager.instance.PlaySFX(28);
         }
     }
 }

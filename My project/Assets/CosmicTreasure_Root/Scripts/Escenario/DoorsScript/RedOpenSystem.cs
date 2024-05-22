@@ -34,6 +34,7 @@ public class RedOpenSystem : MonoBehaviour
         {
             anim.Play("DoorRedOpenAnim");
             closeCol.GetComponent<Collider2D>().enabled = false;
+            AudioManager.instance.PlaySFX(28);
             //shapeRenderer.color = new Color(1f, 1f, 1f, 0f);         //Apaga el techo
 
 
@@ -45,6 +46,7 @@ public class RedOpenSystem : MonoBehaviour
         if (collision.CompareTag("Player") && GameManager.Instance.keyChain[keyToOpen] == true)
         {
             anim.Play("DoorRedCloseAnim");
+            AudioManager.instance.PlaySFX(28);
         }
     }
 }

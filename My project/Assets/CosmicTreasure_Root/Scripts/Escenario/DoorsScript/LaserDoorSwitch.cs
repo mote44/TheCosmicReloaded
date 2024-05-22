@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class LaserDoorSwitch : MonoBehaviour
 {
 
+    Light2D switchLight;
     Animator anim;
     Collider2D col;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        switchLight = GetComponentInChildren<Light2D>();
         
     }
 
@@ -28,7 +32,9 @@ public class LaserDoorSwitch : MonoBehaviour
             //Debug.Log("LASERSWITCH");
             anim.Play("LaserDoorSwitchAnim");
             GameManager.Instance.LaserButtonClick();
-            
+            AudioManager.instance.PlaySFX(25);
+            switchLight.color = Color.green;
+
         }
     }
 

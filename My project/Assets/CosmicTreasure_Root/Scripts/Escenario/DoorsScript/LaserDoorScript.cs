@@ -9,7 +9,9 @@ public class LaserDoorScript : MonoBehaviour
     Collider2D col;
     [SerializeField] Sprite[] spriteList;
     Light2D laserLight;
-    
+    [SerializeField]SpriteRenderer semaforo1;
+    [SerializeField] SpriteRenderer semaforo2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,13 +34,15 @@ public class LaserDoorScript : MonoBehaviour
         {
             sprite.sprite = spriteList[1];
             laserLight.intensity = 1;
+            semaforo1.color = Color.green;
         }
         if (GameManager.Instance.toOpenLaserDoor == 2)
         {
             sprite.sprite = spriteList[2];
             col.isTrigger = true;
             laserLight.color = new Color(0, 1, 0, 1);
-            
+            semaforo2.color = Color.green;
+
         }
     }
 }
