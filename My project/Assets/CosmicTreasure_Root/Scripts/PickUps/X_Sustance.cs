@@ -6,6 +6,7 @@ public class X_Sustance : MonoBehaviour
 {
     public GameObject win;
     [SerializeField] WalkieTalkie01 walkie;
+    [SerializeField] GameObject escapeText;
 
     
 
@@ -17,6 +18,7 @@ public class X_Sustance : MonoBehaviour
             //win.SetActive(true);
             walkie.currentAudio = 1;
             walkie.StartCoroutine("WalkieRoutine");
+            escapeText.GetComponent<SpriteRenderer>().color = Color.green;
 
             //Invoke("MusicEnd", 0.7f);
         }
