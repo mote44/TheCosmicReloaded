@@ -52,12 +52,12 @@ public class Noise : MonoBehaviour
 
     public void NoiseAction2()   //Activa el dispositivo y los enemigos van a él
     {
-            //PlaySFX
-        
-            GameObject.FindGameObjectsWithTag("Enemy");
-            enem.agent.SetDestination(target.transform.position);
-            //enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, noise.transform.position, speed * Time.deltaTime);
-            Invoke("Return", 10);
+        AudioManager.instance.PlaySFX(20);   //QUE SUENE EN LOOP
+
+        GameObject.FindGameObjectsWithTag("Enemy");
+        enem.agent.SetDestination(target.transform.position);
+        //enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, noise.transform.position, speed * Time.deltaTime);
+        Invoke("Return", 10);
         
     }
 
