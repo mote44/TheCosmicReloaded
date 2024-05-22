@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 4211993308950303754}
   - component: {fileID: 673803498324586986}
   - component: {fileID: 1816928324636671909}
+  - component: {fileID: 7100198903437620503}
   - component: {fileID: 7414187465890702648}
   m_Layer: 8
   m_Name: Player
@@ -810,6 +811,36 @@ PolygonCollider2D:
       - {x: -1.4810833, y: 0.46603394}
       - {x: -0.13435948, y: -0.053721786}
   m_UseDelaunayMesh: 0
+--- !u!114 &7100198903437620503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8629839868419145003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: -2.880005, y: -0.8730011, z: 0}
+  - {x: -2.880005, y: 7.8569946, z: 0}
+  - {x: 2.880005, y: 7.8569946, z: 0}
+  - {x: 2.880005, y: -0.8730011, z: 0}
+  m_ShapePathHash: 0
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -1830102
+  m_LocalBounds:
+    m_Center: {x: 0, y: 3.4919968, z: 0}
+    m_Extent: {x: 2.880005, y: 4.364998, z: 0}
 --- !u!82 &7414187465890702648
 AudioSource:
   m_ObjectHideFlags: 0
