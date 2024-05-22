@@ -33,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 2495787087561691832}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &6233277985632704875
 Animator:
@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee63002d8e241d442881528f8241f6f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioList: 2a000000
+  audioDuration: 0a000000
 --- !u!1 &8316578702477092144
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,8 +188,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.12199998, y: 0.0021499991, z: 0}
-    m_Extent: {x: 2.9294, y: 1.7125499, z: 0}
+    m_Center: {x: -0.1257, y: 0.0018000007, z: 0}
+    m_Extent: {x: 2.938, y: 1.7105999, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
