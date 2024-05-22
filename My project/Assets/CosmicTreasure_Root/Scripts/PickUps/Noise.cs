@@ -11,7 +11,7 @@ public class Noise : MonoBehaviour
     public GameObject enemy;
     public float speed;
     private float fireNoise = 0;
-    private bool isDropped;
+    public bool isDropped;
     [SerializeField] private float radius;  //Usar el overlapsphere
 
     public Transform firePoint;
@@ -44,12 +44,13 @@ public class Noise : MonoBehaviour
         GameObject bullet = Instantiate(noisePrefab, firePoint.position, firePoint.rotation);
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireNoise, ForceMode2D.Impulse);
         AudioManager.instance.PlaySFX(36);
-        //isDropped = true;
-        AlertEnemies();
+        isDropped = true;
+        //AlertEnemies();
 
 
     }
 
+    /*
     public void NoiseAction2()   //Activa el dispositivo y los enemigos van a él
     {
         AudioManager.instance.PlaySFX(20);   //QUE SUENE EN LOOP
@@ -66,6 +67,7 @@ public class Noise : MonoBehaviour
         enem.isPatroling = true;
         Destroy(gameObject);
     }
+
 
     private void AlertEnemies()
     {
@@ -88,4 +90,5 @@ public class Noise : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, radius);
     }
+    */
 }
