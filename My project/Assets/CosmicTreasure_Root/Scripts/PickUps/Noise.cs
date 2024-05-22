@@ -15,6 +15,8 @@ public class Noise : MonoBehaviour
     public GameObject droppedNoiseInstancia;
     [SerializeField] private float radius;  //Usar el overlapsphere
 
+    public Noise_Alert alert;
+
     public Transform firePoint;
 
     EnemyTest change;
@@ -48,9 +50,18 @@ public class Noise : MonoBehaviour
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireNoise*2, ForceMode2D.Impulse);
         AudioManager.instance.PlaySFX(36);
         isDropped = true;
+        DeathMine();
         //AlertEnemies();
 
 
+    }
+
+    private void DeathMine()
+    {
+        
+        
+        Destroy(gameObject);
+        
     }
 
     /*
