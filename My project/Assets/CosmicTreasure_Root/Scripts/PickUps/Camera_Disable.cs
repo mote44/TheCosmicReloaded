@@ -34,8 +34,6 @@ public class Camera_Disable : MonoBehaviour
 
     private void DeathMando()
     {
-
-
         Destroy(gameObject);
 
     }

@@ -370,6 +370,7 @@ public class PlayerController : MonoBehaviour
                     fovCollisionCam.rotationSpeed = 0;
                     coliderFovCam.enabled = false;
                     fovLight.enabled = false;
+                    Invoke("CameraNormal", 7);
                 }
                 
             }
@@ -378,5 +379,14 @@ public class PlayerController : MonoBehaviour
         }
 
 
+    }
+
+    private void CameraNormal()
+    {
+        isClicked = false;
+        fovCollisionCam.range = 80;
+        fovCollisionCam.rotationSpeed = 0.15f;
+        coliderFovCam.enabled = true;
+        fovLight.enabled = true;
     }
 }

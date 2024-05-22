@@ -50,7 +50,7 @@ public class Transparency : MonoBehaviour
 
         //ren = GetComponent<SpriteRenderer>();
         //ren.color = new Color(1f, 1f, 1f, 0.35f);
-        Invoke("Return", 5);
+        Invoke("Return", 8);
 
     }
 
