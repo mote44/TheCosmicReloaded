@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         isNormal = true;
-
+        AudioManager.instance.PlaySFX(42);
         soundAreaParticle = GetComponentInChildren<ParticleSystem>();
         soundSource = GetComponent<AudioSource>();
        
