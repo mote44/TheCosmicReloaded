@@ -17,6 +17,11 @@ public class Noise_Alert : MonoBehaviour
         ComeEnemy();
     }
 
+    private void Update()
+    {
+        ComeEnemy();
+    }
+
     public void ComeEnemy()
     {
         if (noise.isDropped)
@@ -42,9 +47,10 @@ public class Noise_Alert : MonoBehaviour
 
     public void NoiseAction2()   //Activa el dispositivo y los enemigos van a él
     {
+        Debug.Log("DestroyMina");
         AudioManager.instance.PlaySFX(20);   //QUE SUENE EN LOOP
 
-        GameObject.FindGameObjectsWithTag("Enemy");
+        //GameObject.FindGameObjectsWithTag("Enemy");
         enem.agent.SetDestination(target.transform.position);
         //enemy.transform.position = Vector2.MoveTowards(enemy.transform.position, noise.transform.position, speed * Time.deltaTime);
         Invoke("Return", 10);
@@ -54,6 +60,7 @@ public class Noise_Alert : MonoBehaviour
     private void Return()  //El objeto luego de unos segundos se destruye
     {
         enem.isPatroling = true;
+        Debug.Log("DestroyMina");
         Destroy(gameObject);
     }
 

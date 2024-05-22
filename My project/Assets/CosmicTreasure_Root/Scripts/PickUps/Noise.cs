@@ -45,7 +45,7 @@ public class Noise : MonoBehaviour
         GameObject bullet = Instantiate(noisePrefab, firePoint.position, firePoint.rotation);
         droppedNoiseInstancia = bullet;
         droppedNoiseInstancia.GetComponent<Noise_Alert>().noise = gameObject.GetComponent<Noise>(); //intento pasar este script como referencia(noise) a otro script
-        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireNoise, ForceMode2D.Impulse);
+        bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireNoise*2, ForceMode2D.Impulse);
         AudioManager.instance.PlaySFX(36);
         isDropped = true;
         //AlertEnemies();
