@@ -9,7 +9,10 @@ using static EnemyTest;
 public class PlayerController : MonoBehaviour
 {
 
+    LineRenderer lineRend;
     ParticleSystem soundAreaParticle;
+    public FOVPoint fovCollisionCam;
+    public Collider2D coliderFovCam;
     
     AudioSource soundSource;
     
@@ -60,6 +63,7 @@ public class PlayerController : MonoBehaviour
     [Header("Camera Disable")]
     public float radiusDesactivation;
     public bool isInRange;
+    public bool isClicked;
 
     //Variable para la mecanica del sonido
     private Transform enemy;
@@ -76,14 +80,15 @@ public class PlayerController : MonoBehaviour
         //AudioManager.instance.PlaySFX(42);
         soundAreaParticle = GetComponentInChildren<ParticleSystem>();
         soundSource = GetComponent<AudioSource>();
-       
+        lineRend = GetComponent<LineRenderer>();
         //currentState = PlayerState.normal;
         //enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
 
     private void Update()
     {
-
+       
+        
         direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")/2).normalized;
 
         //body.velocity = direction * walkSpeed;
@@ -107,6 +112,7 @@ public class PlayerController : MonoBehaviour
             isStealth = false;
         }
 
+        
 
         CameraDisable();     //FUNCIONA?????????
 
@@ -339,6 +345,8 @@ public class PlayerController : MonoBehaviour
     private void CameraDisable()
     {
 
+        lineRend.SetPosition(0, transform.position);
+        lineRend.SetPosition(1, transform.position);
 
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radiusDesactivation);
         foreach (Collider2D col in hitColliders)
@@ -346,8 +354,23 @@ public class PlayerController : MonoBehaviour
 
             if (col.gameObject.CompareTag("Camera"))
             {
+                fovCollisionCam= col.gameObject.GetComponent<FOVPoint>();
+                coliderFovCam = col.gameObject.GetComponent<Collider2D>();
                 isInRange = true;
+                lineRend.SetPosition(1, col.transform.position);
+                
+                if(isClicked)
+                {
+                    Debug.Log("ISCLICKED");
+                    fovCollisionCam.range = .1f;
+                    Debug.Log("FOVCAM.RANGE " + fovCollisionCam.range);
+                    fovCollisionCam.rotationSpeed = 0;
+                    coliderFovCam.enabled = false;
+                }
+                
             }
+            
+            
         }
 
 
