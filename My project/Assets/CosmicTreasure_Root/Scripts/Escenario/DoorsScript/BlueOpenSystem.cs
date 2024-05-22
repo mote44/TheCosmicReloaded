@@ -33,7 +33,7 @@ public class BlueOpenSystem : MonoBehaviour
         if (collision.CompareTag("Player") && GameManager.Instance.keyChain[keyToOpen] == true)
         {
             anim.Play("DoorBlueOpenAnim");
-            AudioManager.instance.PlaySFX(33);
+            AudioManager.instance.PlaySFX(28);
             closeCol.GetComponent<Collider2D>().enabled = false;
             //shapeRenderer.color = new Color(1f, 1f, 1f, 0f);         //Apaga el techo
             
@@ -46,7 +46,7 @@ public class BlueOpenSystem : MonoBehaviour
         if (collision.CompareTag("Player") && GameManager.Instance.keyChain[keyToOpen] == true)
         {
             anim.Play("DoorBlueCloseAnim");
-            AudioManager.instance.PlaySFX(33);
+            AudioManager.instance.PlaySFX(28);
         }
     }
 }
