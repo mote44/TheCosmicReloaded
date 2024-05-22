@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering.Universal;
 
 public class EnemyTest : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class EnemyTest : MonoBehaviour
     public Transform fovPoint;
     public float range = 8f;
     public LayerMask playerLayer;
+    Light2D lightFov;
 
     [Header("Patrol")]
     private int i;
@@ -86,6 +88,7 @@ public class EnemyTest : MonoBehaviour
         currentState = EnemyState.patroling;
         isDetected = false;
         detection = player.GetComponentInChildren<EnemyDetectionSystem>();
+        lightFov = GetComponentInChildren<Light2D>();
 
         //PATHFINDING
         agent = GetComponent<NavMeshAgent>();
@@ -270,6 +273,7 @@ public class EnemyTest : MonoBehaviour
         //agent.SetDestination(movementPoints[0]);
         agent.SetDestination(transform.position);
         LookAt(movementPoints[i].transform);
+        lightFov.color = Color.green;
         if (Vector2.Distance(transform.position, movementPoints[i].position) < 0.02f)
         {
             i++; //Aumenta el índice, cambia de objetivo hacia el que moverse.
@@ -296,6 +300,7 @@ public class EnemyTest : MonoBehaviour
         LookAt(player.transform);
         agent.SetDestination(target);
         Debug.Log("SEEN PLAYER!");
+        lightFov.color = Color.red;
         //Debug.DrawRay(fovPoint.position, dir, Color.red);
     }
 
@@ -305,6 +310,7 @@ public class EnemyTest : MonoBehaviour
         LookAt(player.transform);
         agent.SetDestination(target);
         Debug.Log("HEAR PLAYER!");
+        lightFov.color = Color.yellow;
         //Debug.DrawRay(fovPoint.position, dir, Color.red);
     }
 
