@@ -10,7 +10,7 @@ public class FOVPoint : MonoBehaviour
 
     public float fovAngle = 90f;
     public GameObject player;
-    public float range = 80;
+    public float range;
 
 
     public float rotationSpeed = .15f;  // Velocidad de rotación 
@@ -27,7 +27,7 @@ public class FOVPoint : MonoBehaviour
         animeitor = gameObject.GetComponent<Animator>();
         coneVision = gameObject.GetComponentInChildren<Light2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-
+        range = 80;
     }
 
     private void Update()
