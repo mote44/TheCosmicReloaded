@@ -225,7 +225,7 @@ MonoBehaviour:
   objectVector2: {x: 0, y: 0}
   pointToPlayer: {x: 0, y: 0}
   playerDistance: 0
-  maxDistance: 4
+  maxDistance: 5
   keyNum: 0
   defaultLayer: 
   actionLayer: 
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Intensity: 0.7
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 61ba6357db478fac
+  m_ApplyToSortingLayers: f7ed4126
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -296,8 +296,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.18065, y: 4.16755, z: 0}
-    m_Extent: {x: 4.3995504, y: 3.2495499, z: 0}
+    m_Center: {x: 0.18085003, y: 4.1735, z: 0}
+    m_Extent: {x: 4.39045, y: 3.2480001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

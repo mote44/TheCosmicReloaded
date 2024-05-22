@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 {
 
     ParticleSystem soundAreaParticle;
+    AudioSource soundSource;
     
     public Rigidbody2D body;
 
@@ -72,6 +73,7 @@ public class PlayerController : MonoBehaviour
         isNormal = true;
 
         soundAreaParticle = GetComponentInChildren<ParticleSystem>();
+        soundSource = GetComponent<AudioSource>();
         //currentState = PlayerState.normal;
         //enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
@@ -286,7 +288,13 @@ public class PlayerController : MonoBehaviour
         body.velocity = direction * walkSpeed;
         HandleSpriteFlip();
         SetSprite();
-        if((body.velocity.x != 0 || body.velocity.y !=0) && soundAreaParticle.isStopped) { soundAreaParticle.Play(); }
+        if ((body.velocity.x != 0 || body.velocity.y != 0))
+        {
+            
+            soundSource.mute = false;
+            if (soundAreaParticle.isStopped) { soundAreaParticle.Play(); }
+        }
+        else if ((body.velocity.x == 0 || body.velocity.y == 0)) { soundSource.mute = true; }
 
     }
 
