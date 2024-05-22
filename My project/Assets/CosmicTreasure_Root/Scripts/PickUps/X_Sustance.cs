@@ -18,7 +18,7 @@ public class X_Sustance : MonoBehaviour
             walkie.currentAudio = 1;
             walkie.StartCoroutine("WalkieRoutine");
 
-            Invoke("MusicEnd", 0.7f);
+            //Invoke("MusicEnd", 0.7f);
         }
     }
 

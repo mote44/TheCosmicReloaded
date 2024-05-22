@@ -19,6 +19,7 @@ public class EscapeCollider : MonoBehaviour
             Debug.Log("ESCAPE!!!");
             AudioManager.instance.PlaySFX(46);
             winPanel.SetActive(true);
+            //AudioManager.instance.PlaySFX(50);
             //anim.Play("EsclusaOpen");
         }
     }
