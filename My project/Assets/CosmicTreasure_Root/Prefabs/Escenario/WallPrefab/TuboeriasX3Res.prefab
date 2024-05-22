@@ -66,7 +66,7 @@ GameObject:
   - component: {fileID: 4080767305631539575}
   - component: {fileID: 7905141208805536749}
   - component: {fileID: 6196642254271812975}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TuboeriasX3Res
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ Transform:
   m_Children:
   - {fileID: 652632580528917108}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4080767305631539575
 SpriteRenderer:
