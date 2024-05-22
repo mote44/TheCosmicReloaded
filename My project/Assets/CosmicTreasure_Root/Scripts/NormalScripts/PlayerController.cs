@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.PlayerLoop;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.Scripting.APIUpdating;
 using static EnemyTest;
 
@@ -64,6 +65,7 @@ public class PlayerController : MonoBehaviour
     public float radiusDesactivation;
     public bool isInRange;
     public bool isClicked;
+    private Light2D fovLight;
 
     //Variable para la mecanica del sonido
     private Transform enemy;
@@ -356,6 +358,7 @@ public class PlayerController : MonoBehaviour
             {
                 fovCollisionCam= col.gameObject.GetComponent<FOVPoint>();
                 coliderFovCam = col.gameObject.GetComponent<Collider2D>();
+                fovLight = col.gameObject.GetComponentInChildren<Light2D>();
                 isInRange = true;
                 lineRend.SetPosition(1, col.transform.position);
                 
@@ -366,6 +369,7 @@ public class PlayerController : MonoBehaviour
                     Debug.Log("FOVCAM.RANGE " + fovCollisionCam.range);
                     fovCollisionCam.rotationSpeed = 0;
                     coliderFovCam.enabled = false;
+                    fovLight.enabled = false;
                 }
                 
             }
