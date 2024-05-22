@@ -38,6 +38,7 @@ public class YellowOpenSystem : MonoBehaviour
             closeCol.GetComponent<Collider2D>().enabled = false;
 
         }
+        else if (collision.CompareTag("Player") && GameManager.Instance.keyChain[keyToOpen] != true) { AudioManager.instance.PlaySFX(27); }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
