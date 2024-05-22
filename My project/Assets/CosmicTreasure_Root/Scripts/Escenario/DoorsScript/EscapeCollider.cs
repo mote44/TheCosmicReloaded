@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class EscapeCollider : MonoBehaviour
 {
     [SerializeField] GameObject winPanel;
-    //Animator anim;
+    Animator anim;
     // Start is called before the first frame update
     private void Start()
     {
