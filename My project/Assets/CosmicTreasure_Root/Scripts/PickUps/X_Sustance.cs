@@ -17,6 +17,13 @@ public class X_Sustance : MonoBehaviour
             //win.SetActive(true);
             walkie.currentAudio = 1;
             walkie.StartCoroutine("WalkieRoutine");
+
+            Invoke("MusicEnd", 0.7f);
         }
+    }
+
+    private void MusicEnd()
+    {
+        AudioManager.instance.PlaySFX(50);
     }
 }
