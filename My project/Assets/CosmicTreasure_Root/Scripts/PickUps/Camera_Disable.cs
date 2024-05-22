@@ -15,7 +15,7 @@ public class Camera_Disable : MonoBehaviour
 
     private void Update()
     {
-        CameraOff();
+        
     }
 
     public void CameraOff()
