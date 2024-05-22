@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3402388689338658741}
   - component: {fileID: 3820745707836315996}
   - component: {fileID: 5033539697202079541}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ext2Res
   m_TagString: Untagged
   m_Icon: {fileID: 0}

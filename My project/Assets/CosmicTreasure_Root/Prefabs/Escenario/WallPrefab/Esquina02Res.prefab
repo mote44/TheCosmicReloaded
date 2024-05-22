@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7736999114039788383}
   - component: {fileID: 7373498798161467885}
   - component: {fileID: 3343864441943581070}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Esquina02Res
   m_TagString: Untagged
   m_Icon: {fileID: 0}
