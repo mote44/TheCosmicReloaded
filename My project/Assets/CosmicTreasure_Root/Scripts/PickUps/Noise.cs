@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Noise : MonoBehaviour
 {
-    EnemyTest enem;
+    public EnemyTest enem;
     public Transform target;
     public GameObject noisePrefab;
     public GameObject enemy;
