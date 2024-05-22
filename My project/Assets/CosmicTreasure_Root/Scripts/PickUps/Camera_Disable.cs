@@ -28,6 +28,15 @@ public class Camera_Disable : MonoBehaviour
             //fov.range = 0.1f;
             //fov.rotationSpeed = 0.0f;
             controller.isClicked = true;
+            DeathMando();
         }
+    }
+
+    private void DeathMando()
+    {
+
+
+        Destroy(gameObject);
+
     }
 }
