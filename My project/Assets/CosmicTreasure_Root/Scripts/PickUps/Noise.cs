@@ -12,6 +12,7 @@ public class Noise : MonoBehaviour
     public float speed;
     private float fireNoise = 0;
     public bool isDropped;
+    public GameObject droppedNoiseInstancia;
     [SerializeField] private float radius;  //Usar el overlapsphere
 
     public Transform firePoint;
@@ -42,6 +43,8 @@ public class Noise : MonoBehaviour
     public void NoiseAction()   //Instancia el dispositivo
     {
         GameObject bullet = Instantiate(noisePrefab, firePoint.position, firePoint.rotation);
+        droppedNoiseInstancia = bullet;
+        droppedNoiseInstancia.GetComponent<Noise_Alert>().noise = gameObject.GetComponent<Noise>(); //intento pasar este script como referencia(noise) a otro script
         bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireNoise, ForceMode2D.Impulse);
         AudioManager.instance.PlaySFX(36);
         isDropped = true;

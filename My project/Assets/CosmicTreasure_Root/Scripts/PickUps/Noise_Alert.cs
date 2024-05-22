@@ -12,7 +12,8 @@ public class Noise_Alert : MonoBehaviour
 
     private void Start()
     {
-        noise = GetComponent<Noise>();
+        
+        //noise = GetComponent<Noise>();
         ComeEnemy();
     }
 
@@ -28,6 +29,8 @@ public class Noise_Alert : MonoBehaviour
 
                     if (col.gameObject.CompareTag("Enemy"))
                     {
+                        Debug.Log("TE PILLO EL SCRIPT");
+                        enem = col.gameObject.GetComponent<EnemyTest>();
                         NoiseAction2();
                     }
                 }
