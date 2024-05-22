@@ -173,16 +173,16 @@ MonoBehaviour:
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
   m_ShapePath:
-  - {x: -2.880005, y: -0.8730011, z: 0}
-  - {x: -2.880005, y: 7.8569946, z: 0}
-  - {x: 2.880005, y: 7.8569946, z: 0}
-  - {x: 2.880005, y: -0.8730011, z: 0}
-  m_ShapePathHash: 0
+  - {x: -3.033512, y: -2.342286, z: 0}
+  - {x: -2.1062527, y: -2.1465034, z: 0}
+  - {x: 2.3273258, y: -4.3019543, z: 0}
+  - {x: 1.4984379, y: -4.644897, z: 0}
+  m_ShapePathHash: 1864789977
   m_Mesh: {fileID: 0}
-  m_InstanceId: -16423642
+  m_InstanceId: 1253794
   m_LocalBounds:
-    m_Center: {x: 0, y: 3.4919968, z: 0}
-    m_Extent: {x: 2.880005, y: 4.364998, z: 0}
+    m_Center: {x: -0.35309315, y: -3.3957002, z: 0}
+    m_Extent: {x: 2.680419, y: 1.2491968, z: 0}
 --- !u!1 &5125318084885401304
 GameObject:
   m_ObjectHideFlags: 0

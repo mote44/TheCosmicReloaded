@@ -66,6 +66,7 @@ GameObject:
   - component: {fileID: 5287121523353364541}
   - component: {fileID: 4492294801150396543}
   - component: {fileID: 4626900600831332532}
+  - component: {fileID: 3588736261497624568}
   m_Layer: 0
   m_Name: Roof2_WallRes
   m_TagString: Untagged
@@ -128,7 +129,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1906066853
-  m_SortingLayer: 6
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b1930ad74c4a1c44790b21c49ed0ad74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -208,3 +209,35 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &3588736261497624568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4032672670987485892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: 4.574768, y: -5.7630196, z: 0}
+  - {x: -6.043686, y: -0.4492836, z: 0}
+  - {x: -5.284889, y: -0.149086, z: 0}
+  - {x: 4.581627, y: -4.960148, z: 0}
+  - {x: 5.2474136, y: -4.7271194, z: 0}
+  - {x: 5.9888077, y: -5.206848, z: 0}
+  m_ShapePathHash: -1355407427
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 1255184
+  m_LocalBounds:
+    m_Center: {x: -2.3077757, y: 1.4714621, z: 0}
+    m_Extent: {x: 2.9702494, y: 1.4753819, z: 0}

@@ -174,13 +174,15 @@ MonoBehaviour:
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
   m_ShapePath:
-  - {x: -2.880005, y: -0.8730011, z: 0}
-  - {x: -2.880005, y: 7.8569946, z: 0}
-  - {x: 2.880005, y: 7.8569946, z: 0}
-  - {x: 2.880005, y: -0.8730011, z: 0}
-  m_ShapePathHash: 0
+  - {x: -4.464133, y: -1.7027845, z: 0}
+  - {x: -3.7777495, y: -1.3653028, z: 0}
+  - {x: -0.105972186, y: -3.2737744, z: 0}
+  - {x: 3.4513032, y: -1.446919, z: 0}
+  - {x: 4.2378387, y: -1.7530713, z: 0}
+  - {x: -0.226303, y: -3.9980543, z: 0}
+  m_ShapePathHash: 614272864
   m_Mesh: {fileID: 0}
-  m_InstanceId: -16423642
+  m_InstanceId: 1253484
   m_LocalBounds:
-    m_Center: {x: 0, y: 3.4919968, z: 0}
-    m_Extent: {x: 2.880005, y: 4.364998, z: 0}
+    m_Center: {x: -0.11314726, y: -2.6816785, z: 0}
+    m_Extent: {x: 4.3509855, y: 1.3163757, z: 0}

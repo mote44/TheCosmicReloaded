@@ -36,7 +36,7 @@ Transform:
   - {fileID: 3253416984896708489}
   - {fileID: 1169598817329303980}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6048883324757792030
 SpriteRenderer:
@@ -179,16 +179,20 @@ MonoBehaviour:
   m_SelfShadows: 0
   m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
   m_ShapePath:
-  - {x: -2.880005, y: -0.8730011, z: 0}
-  - {x: -2.880005, y: 7.8569946, z: 0}
-  - {x: 2.880005, y: 7.8569946, z: 0}
-  - {x: 2.880005, y: -0.8730011, z: 0}
-  m_ShapePathHash: 0
+  - {x: -4.6156416, y: 1.2255429, z: 0}
+  - {x: -3.726732, y: 1.4594922, z: 0}
+  - {x: -1.6427717, y: 0.50121605, z: 0}
+  - {x: 0.9538579, y: -2.189499, z: 0}
+  - {x: 5.391504, y: -4.390515, z: 0}
+  - {x: 4.7059765, y: -4.7746496, z: 0}
+  - {x: 0.50226885, y: -2.7163517, z: 0}
+  - {x: -2.4894993, y: 0.16252467, z: 0}
+  m_ShapePathHash: 870225183
   m_Mesh: {fileID: 0}
-  m_InstanceId: -16423642
+  m_InstanceId: 1252630
   m_LocalBounds:
-    m_Center: {x: 0, y: 3.4919968, z: 0}
-    m_Extent: {x: 2.880005, y: 4.364998, z: 0}
+    m_Center: {x: 0.38793087, y: -1.6575787, z: 0}
+    m_Extent: {x: 5.0035725, y: 3.117071, z: 0}
 --- !u!1 &1382893041498484347
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,8 +423,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.057200074, y: -0.0123000145, z: 0}
-    m_Extent: {x: 2.3456001, y: 1.7335, z: 0}
+    m_Center: {x: 0.051800013, y: 0.00015002489, z: 0}
+    m_Extent: {x: 2.3454, y: 1.7341499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

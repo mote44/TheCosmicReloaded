@@ -67,6 +67,7 @@ GameObject:
   - component: {fileID: 8047067730507494161}
   - component: {fileID: 9061009839854401299}
   - component: {fileID: 3219726872395093146}
+  - component: {fileID: 2594110991805950990}
   m_Layer: 0
   m_Name: ParedServer_Res
   m_TagString: Untagged
@@ -229,6 +230,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2594110991805950990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6915503857799952950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: -2.9389243, y: -3.6402893, z: 0}
+  - {x: 4.4249115, y: 0.056292057, z: 0}
+  - {x: 5.2868924, y: -0.37865114, z: 0}
+  - {x: -2.1043308, y: -4.1221485, z: 0}
+  m_ShapePathHash: 1399870003
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 1253794
+  m_LocalBounds:
+    m_Center: {x: -0.35309315, y: -3.3957002, z: 0}
+    m_Extent: {x: 2.680419, y: 1.2491968, z: 0}
 --- !u!1 &7443934364866720664
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,8 +326,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.16225, y: 2.79855, z: 0}
-    m_Extent: {x: 5.60755, y: 4.6265497, z: 0}
+    m_Center: {x: -1.1639001, y: 2.7995, z: 0}
+    m_Extent: {x: 5.6104, y: 4.6257, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

@@ -66,6 +66,7 @@ GameObject:
   - component: {fileID: 1749481828078348277}
   - component: {fileID: 6417748854056466949}
   - component: {fileID: 8448550531417708954}
+  - component: {fileID: -3763513616980128640}
   m_Layer: 0
   m_Name: RedWall01
   m_TagString: Untagged
@@ -128,7 +129,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1906066853
-  m_SortingLayer: 6
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8ca5afc76fc032249a6774f7e078fbbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -207,3 +208,33 @@ PolygonCollider2D:
       - {x: 0.060098875, y: 0}
       - {x: 0.66009885, y: 0.28}
   m_UseDelaunayMesh: 0
+--- !u!114 &-3763513616980128640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187154763941707622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: 0.014102134, y: -0.0039197216, z: 0}
+  - {x: -5.278025, y: 2.6466448, z: 0}
+  - {x: -4.58581, y: 2.9468439, z: 0}
+  - {x: 0.66247356, y: 0.35251033, z: 0}
+  m_ShapePathHash: -694765164
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 1255184
+  m_LocalBounds:
+    m_Center: {x: -2.3077757, y: 1.4714621, z: 0}
+    m_Extent: {x: 2.9702494, y: 1.4753819, z: 0}

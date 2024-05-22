@@ -66,8 +66,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.031100035, y: -1.67195, z: 0}
-    m_Extent: {x: 1.8648, y: 1.7714499, z: 0}
+    m_Center: {x: 0.027150035, y: -1.671, z: 0}
+    m_Extent: {x: 1.85825, y: 1.7797, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 3898697353693091104}
   - component: {fileID: 2243612242340411372}
   - component: {fileID: 5562850761588512950}
+  - component: {fileID: 1908582329402382310}
   m_Layer: 0
   m_Name: ParedDepositoPerpendicular
   m_TagString: Untagged
@@ -242,3 +243,41 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1908582329402382310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6203363570978396533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: -0.55893326, y: 0.29747915, z: 0}
+  - {x: 2.4479313, y: 1.8452582, z: 0}
+  - {x: 3.0453682, y: 1.4763012, z: 0}
+  - {x: 2.6369476, y: 1.1289082, z: 0}
+  - {x: 2.6504116, y: 0.9250202, z: 0}
+  - {x: 2.7462368, y: 0.7407403, z: 0}
+  - {x: 2.7451744, y: 0.53366613, z: 0}
+  - {x: 2.5554523, y: 0.27278376, z: 0}
+  - {x: 2.1814785, y: 0.18324947, z: 0}
+  - {x: 1.5546913, y: 0.18193245, z: 0}
+  - {x: 0.94849586, y: 0.44285965, z: 0}
+  - {x: 0.07524681, y: -0.01260519, z: 0}
+  m_ShapePathHash: 1795029501
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 1253872
+  m_LocalBounds:
+    m_Center: {x: -0.9588394, y: -2.7928562, z: 0}
+    m_Extent: {x: 2.711586, y: 2.1759777, z: 0}

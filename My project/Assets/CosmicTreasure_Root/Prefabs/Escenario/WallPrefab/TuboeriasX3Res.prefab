@@ -66,6 +66,7 @@ GameObject:
   - component: {fileID: 4080767305631539575}
   - component: {fileID: 7905141208805536749}
   - component: {fileID: 6196642254271812975}
+  - component: {fileID: 6193173512040124719}
   m_Layer: 8
   m_Name: TuboeriasX3Res
   m_TagString: Untagged
@@ -87,7 +88,7 @@ Transform:
   m_Children:
   - {fileID: 652632580528917108}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4080767305631539575
 SpriteRenderer:
@@ -207,3 +208,33 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &6193173512040124719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6652598317626440318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: 0.81464386, y: -3.406231, z: 0}
+  - {x: -1.559082, y: -2.1158886, z: 0}
+  - {x: -1.0186462, y: -1.8726101, z: 0}
+  - {x: 1.5297318, y: -3.143198, z: 0}
+  m_ShapePathHash: -333177835
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 1255184
+  m_LocalBounds:
+    m_Center: {x: -2.3077757, y: 1.4714621, z: 0}
+    m_Extent: {x: 2.9702494, y: 1.4753819, z: 0}

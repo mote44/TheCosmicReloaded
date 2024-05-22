@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6371211785368930854}
   - component: {fileID: 1751795100571978929}
   - component: {fileID: 592035595075302085}
+  - component: {fileID: -5231992418285241324}
   m_Layer: 0
   m_Name: RedExteriorRes
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1548417481
-  m_SortingLayer: 13
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 13a4be1ee3f64434ebd2a945475f3693, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -151,3 +152,33 @@ PolygonCollider2D:
       - {x: 1.9380069, y: -1.9990249}
       - {x: -2.2209768, y: -4.1289263}
   m_UseDelaunayMesh: 0
+--- !u!114 &-5231992418285241324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2560202506324955679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: -2.2618217, y: -4.1047974, z: 0}
+  - {x: -2.9656353, y: -3.7850456, z: 0}
+  - {x: 1.1501961, y: -1.7230415, z: 0}
+  - {x: 1.8763142, y: -1.975254, z: 0}
+  m_ShapePathHash: 663344957
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 1255104
+  m_LocalBounds:
+    m_Center: {x: -0.54466057, y: -2.9139194, z: 0}
+    m_Extent: {x: 2.4209747, y: 1.1908779, z: 0}

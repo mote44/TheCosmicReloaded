@@ -66,6 +66,7 @@ GameObject:
   - component: {fileID: 4396136410642855756}
   - component: {fileID: 5387294745574853254}
   - component: {fileID: 1158056867204841727}
+  - component: {fileID: 2224958071773917995}
   m_Layer: 0
   m_Name: RedExterior02depositoRes
   m_TagString: Untagged
@@ -87,7 +88,7 @@ Transform:
   m_Children:
   - {fileID: 8711208880031737555}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4396136410642855756
 SpriteRenderer:
@@ -206,3 +207,33 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &2224958071773917995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8905249769339604388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: 3.7371674, y: -5.037586, z: 0}
+  - {x: -4.065918, y: -0.9354973, z: 0}
+  - {x: -3.097786, y: -0.95848083, z: 0}
+  - {x: 4.6534615, y: -5.0669975, z: 0}
+  m_ShapePathHash: 346215645
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 1255002
+  m_LocalBounds:
+    m_Center: {x: 0.29377174, y: -3.0012474, z: 0}
+    m_Extent: {x: 4.3596897, y: 2.0657501, z: 0}
