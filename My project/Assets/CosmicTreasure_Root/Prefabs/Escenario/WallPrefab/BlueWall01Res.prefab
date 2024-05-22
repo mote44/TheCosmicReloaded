@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 8878807336662625287}
   - component: {fileID: 3657056347829788865}
   - component: {fileID: 3156429919444678851}
+  - component: {fileID: 1415937976665759592}
   m_Layer: 0
   m_Name: BlueWall01Res
   m_TagString: Untagged
@@ -229,3 +230,33 @@ PolygonCollider2D:
       - {x: -2.3116968, y: -1.6445539}
       - {x: 3.9068146, y: -4.5778522}
   m_UseDelaunayMesh: 0
+--- !u!114 &1415937976665759592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5306863377432161837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: -2.880005, y: -0.8730011, z: 0}
+  - {x: -2.880005, y: 7.8569946, z: 0}
+  - {x: 2.880005, y: 7.8569946, z: 0}
+  - {x: 2.880005, y: -0.8730011, z: 0}
+  m_ShapePathHash: 0
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -16423642
+  m_LocalBounds:
+    m_Center: {x: 0, y: 3.4919968, z: 0}
+    m_Extent: {x: 2.880005, y: 4.364998, z: 0}
