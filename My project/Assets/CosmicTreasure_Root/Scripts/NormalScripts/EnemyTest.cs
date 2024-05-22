@@ -344,7 +344,7 @@ public class EnemyTest : MonoBehaviour
     }
     */
 
-    private void LookAt(Transform target)
+    public void LookAt(Transform target)
     {
         Vector3 vectorToTarget = target.transform.position - transform.position;
         float anglee = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg - rotationModifier;
