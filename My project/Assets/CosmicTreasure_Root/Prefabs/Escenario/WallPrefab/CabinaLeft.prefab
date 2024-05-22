@@ -35,7 +35,7 @@ Transform:
   - {fileID: 3253416984896708489}
   - {fileID: 1169598817329303980}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6048883324757792030
 SpriteRenderer:
@@ -151,7 +151,7 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -2.492962, y: 0.1588409}
       - {x: 0.4632721, y: -2.717879}
-      - {x: 4.644784, y: -4.7631598}
+      - {x: 5.4196043, y: -5.1207685}
       - {x: 5.4386067, y: -4.43744}
       - {x: 1.0160849, y: -2.2036672}
       - {x: -1.6534557, y: 0.43241477}
@@ -388,8 +388,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.05549991, y: -0.0042999983, z: 0}
-    m_Extent: {x: 2.3411999, y: 1.7412, z: 0}
+    m_Center: {x: 0.057200074, y: -0.0123000145, z: 0}
+    m_Extent: {x: 2.3456001, y: 1.7335, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
