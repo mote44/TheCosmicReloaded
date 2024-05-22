@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InitialScene : MonoBehaviour
 {
@@ -13,6 +14,11 @@ public class InitialScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Invoke ("NextSceneAction", 51);
+    }
+
+    void NextSceneAction()
+    {
+        SceneManager.LoadScene(2);
     }
 }
