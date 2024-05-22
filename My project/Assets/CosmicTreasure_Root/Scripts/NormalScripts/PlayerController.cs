@@ -10,8 +10,10 @@ public class PlayerController : MonoBehaviour
 {
 
     ParticleSystem soundAreaParticle;
+    
     AudioSource soundSource;
     
+
     public Rigidbody2D body;
 
     public SpriteRenderer spriteRenderer;
@@ -74,6 +76,7 @@ public class PlayerController : MonoBehaviour
 
         soundAreaParticle = GetComponentInChildren<ParticleSystem>();
         soundSource = GetComponent<AudioSource>();
+       
         //currentState = PlayerState.normal;
         //enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
@@ -288,6 +291,7 @@ public class PlayerController : MonoBehaviour
         body.velocity = direction * walkSpeed;
         HandleSpriteFlip();
         SetSprite();
+        soundAreaParticle.startColor = Color.red;
         if ((body.velocity.x != 0 || body.velocity.y != 0))
         {
             
@@ -304,7 +308,14 @@ public class PlayerController : MonoBehaviour
         body.velocity = direction * walkSpeedStealth;
         HandleSpriteFlipStealth();
         SetSpriteStealth();
+        soundAreaParticle.startColor = Color.cyan;
+        soundSource.mute = true;
+        if ((body.velocity.x != 0 || body.velocity.y != 0))
+        {
 
+            
+            if (soundAreaParticle.isStopped) { soundAreaParticle.Play(); }
+        }
     }
 
     void PlayerStateManagement()
