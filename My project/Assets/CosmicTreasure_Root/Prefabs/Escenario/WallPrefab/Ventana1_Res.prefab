@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4162085950438692690}
   - component: {fileID: 7712246746343515998}
   - component: {fileID: 1017760169996359588}
+  - component: {fileID: 1591156823403133612}
   m_Layer: 0
   m_Name: Ventana1_Res
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1466153569
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: af5810215ea7a124e8f56a391b0a073e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,3 +156,37 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1591156823403133612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4431401321592469063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: -9.005457, y: 2.4580705, z: 0}
+  - {x: -9.817682, y: 2.846213, z: 0}
+  - {x: -6.952109, y: 4.376701, z: 0}
+  - {x: 0.19609334, y: 0.9760998, z: 0}
+  - {x: 2.6248553, y: 2.1872911, z: 0}
+  - {x: 3.6811323, y: 1.8189031, z: 0}
+  - {x: 0.022592964, y: 0.07389925, z: 0}
+  - {x: -6.743909, y: 3.578601, z: 0}
+  m_ShapePathHash: -1235181551
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 1255184
+  m_LocalBounds:
+    m_Center: {x: -2.3077757, y: 1.4714621, z: 0}
+    m_Extent: {x: 2.9702494, y: 1.4753819, z: 0}
