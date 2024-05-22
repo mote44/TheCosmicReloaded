@@ -8,6 +8,7 @@ TagManager:
   - PlayerSound
   - EnemyDetector
   - Camera
+  - NoiseButton
   layers:
   - Default
   - TransparentFX

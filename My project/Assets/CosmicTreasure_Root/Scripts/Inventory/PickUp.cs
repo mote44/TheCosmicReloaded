@@ -10,6 +10,7 @@ public class PickUp : MonoBehaviour
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory2>();
+        itemButton = GameObject.FindGameObjectWithTag("NoiseButton");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
