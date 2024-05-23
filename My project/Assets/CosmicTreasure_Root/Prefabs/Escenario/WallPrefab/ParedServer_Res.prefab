@@ -90,7 +90,7 @@ Transform:
   - {fileID: 7584926743598095376}
   - {fileID: 6276089261817063047}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &744333176195304085
 SpriteRenderer:
@@ -256,10 +256,10 @@ MonoBehaviour:
   - {x: -2.1043308, y: -4.1221485, z: 0}
   m_ShapePathHash: 1399870003
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1253794
+  m_InstanceId: 675066
   m_LocalBounds:
-    m_Center: {x: -0.35309315, y: -3.3957002, z: 0}
-    m_Extent: {x: 2.680419, y: 1.2491968, z: 0}
+    m_Center: {x: 1.173984, y: -2.0329282, z: 0}
+    m_Extent: {x: 4.1129084, y: 2.0892203, z: 0}
 --- !u!1 &7443934364866720664
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 6985256e03b77bda61ba635737467d5ac576e5fdffa9b963a5459c71db478fac
+  m_ApplyToSortingLayers: e1b644f5c59bac80a9040301f7ed412639e0c27509d66118fbb0e6bd
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -326,8 +326,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.1639001, y: 2.7995, z: 0}
-    m_Extent: {x: 5.6104, y: 4.6257, z: 0}
+    m_Center: {x: -1.1570001, y: 2.796, z: 0}
+    m_Extent: {x: 5.6133, y: 4.6241, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
