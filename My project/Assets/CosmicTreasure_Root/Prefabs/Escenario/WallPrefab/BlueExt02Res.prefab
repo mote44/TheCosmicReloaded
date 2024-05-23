@@ -65,6 +65,8 @@ GameObject:
   - component: {fileID: 1575297908029640149}
   - component: {fileID: 8871936191996525745}
   - component: {fileID: 7144868776085200810}
+  - component: {fileID: 8371256095739187468}
+  - component: {fileID: -1718974817554222400}
   m_Layer: 0
   m_Name: BlueExt02Res
   m_TagString: Untagged
@@ -191,3 +193,49 @@ PolygonCollider2D:
       - {x: 8.546793, y: -1.6027774}
       - {x: 8.92451, y: -1.3494138}
   m_UseDelaunayMesh: 0
+--- !u!114 &8371256095739187468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5107472426256971644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!114 &-1718974817554222400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5107472426256971644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_ComponentVersion: 1
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 000000003b79d438bb11231ee1b644f57d281d9eb1aa1846fbaf4918a9040301c59bac80f7ed412639e0c27509d661188b0108cffbb0e6bd1f81ea2feb6ffaf1dda863f96b8bdc83
+  m_ShapePath:
+  - {x: -7.712673, y: -8.789056, z: 0}
+  - {x: 7.2236967, y: -1.1071378, z: 0}
+  - {x: 8.724085, y: -1.4361088, z: 0}
+  - {x: -6.0316973, y: -8.824609, z: 0}
+  m_ShapePathHash: 1808663079
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 52332
+  m_LocalBounds:
+    m_Center: {x: 0.50570583, y: -4.9658732, z: 0}
+    m_Extent: {x: 8.218379, y: 3.8587356, z: 0}
