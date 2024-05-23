@@ -344,12 +344,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99a6437f4907304eb9009e1dedb4a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enem: []
   lose: {fileID: 0}
   rb: {fileID: 0}
   agent: {fileID: -1801447180874530132}
   direction: {x: 0, y: 0}
   anim: {fileID: 0}
-  radiusAlert: 20.15
+  radiusAlert: 0.1
   fireRate: 1
   bullet: {fileID: 7265355007015163609, guid: 3dd63978d2379824e8e4189cea5d1cac, type: 3}
   bulletParent: {fileID: 2999779645531721337}

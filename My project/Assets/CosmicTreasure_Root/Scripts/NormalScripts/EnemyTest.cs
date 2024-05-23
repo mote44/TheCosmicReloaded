@@ -16,7 +16,7 @@ public class EnemyTest : MonoBehaviour
     private bool isPlayedShot = false;
 
     EnemyDetectionSystem detection;
-
+     public EnemyTest[] enem;
     public GameObject lose;
 
     PlayerController playerController;
@@ -211,10 +211,26 @@ public class EnemyTest : MonoBehaviour
         foreach (Collider2D col in hitColliders)
         {
             
-            if (col.gameObject.CompareTag("Enemy"))
+            for (int i = 0; i < hitColliders.Length; i++)
             {
-                col.GetComponent<EnemyTest>().isChasing = true;
+                if (col.gameObject.CompareTag("Enemy"))
+                {
+                    col.GetComponent<EnemyTest>().isChasing = true; //Entra pero se atrampa
+                    //col.GetComponent<EnemyTest>().isPatroling = false;
+                   enem[i] = col.gameObject.GetComponent<EnemyTest>();
+                }
+                Invoke("ToPatrol", 6);
             }
+           
+        }
+    }
+
+    void ToPatrol()
+    {
+        for (int i = 0; i < enem.Length;i++)
+        {
+            enem[i].isChasing = false;
+            enem[i].isPatroling = true;
         }
     }
 
@@ -289,7 +305,8 @@ public class EnemyTest : MonoBehaviour
             }
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, movementPoints[i].position, speedMovement * Time.deltaTime);
+        agent.SetDestination(movementPoints[i].position);
+        //transform.position = Vector2.MoveTowards(transform.position, movementPoints[i].position, speedMovement * Time.deltaTime);
     }
 
     public void ChasePlayer(Vector2 target)

@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Transparency : MonoBehaviour
 {
-    public EnemyTest enem;
+    public EnemyTest[] enem;
     public Transform player;
     private Color newColor = new Color(1f, 1f, 1f, 0.35f);
     private Color oldColor = new Color(1f, 1f, 1f, 1f);
+    bool isActivated;
 
     private bool isInvisible;
 
-    EnemyTest ray;
+    //EnemyTest ray;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,19 @@ public class Transparency : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+       
+            for (int i = 0; i < enem.Length; i++)
+            {
+                if (isActivated)
+                {
+                     enem[i].range = .1f;
+
+                }
+            else { enem[i].range = 8f; }
+
+        }
+
         /*
         if (Input.GetKey(KeyCode.Alpha1)) //&& equippedTrans)
         {
@@ -35,7 +49,7 @@ public class Transparency : MonoBehaviour
             }
         }
         */
-        
+
     }
 
     public void Use()   //Cambia la transparencia del player
@@ -44,7 +58,11 @@ public class Transparency : MonoBehaviour
         SpriteRenderer spriteRenderer = player.GetComponent<SpriteRenderer>();
         //Destroy(gameObject);
         spriteRenderer.color = newColor;
-        enem.range = 0.1f;
+        isActivated = true;
+      
+        //enem = GameObject.FindGameObjectWithTag("Enemy");
+        
+        //enem.range = 0.1f;
         AudioManager.instance.PlaySFX(23);
         // QUE EL ENEMIGO NO PUEDA VER AL PLAYER
 
@@ -58,7 +76,7 @@ public class Transparency : MonoBehaviour
     {
         SpriteRenderer spriteRenderer = player.GetComponent<SpriteRenderer>();
         spriteRenderer.color = oldColor;
-        enem.range = 8f;
+        //enem.range = 8f;
         //ren.color = new Color(1f, 1f, 1f, 1f);
         Destroy(gameObject);
     }

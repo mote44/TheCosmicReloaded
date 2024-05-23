@@ -26,7 +26,7 @@ public class Noise_Alert : MonoBehaviour
 
     public void ComeEnemy()
     {
-        if (noise.isDropped)
+        if (noise.isDropped )
         {
             {
 
@@ -38,7 +38,8 @@ public class Noise_Alert : MonoBehaviour
                     {
                         Debug.Log("TE PILLO EL SCRIPT");
                         enem = col.gameObject.GetComponent<EnemyTest>();
-                        NoiseAction2();
+                        if (enem.isChasing == false) { NoiseAction2(); }
+                        
                     }
                 }
 

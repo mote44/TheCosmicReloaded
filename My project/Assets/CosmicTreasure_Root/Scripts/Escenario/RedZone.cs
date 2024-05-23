@@ -11,6 +11,7 @@ public class RedZone : MonoBehaviour
     [SerializeField] private int startingPoint;
     [SerializeField] Transform playerPos;
     [SerializeField] bool isDetected;
+    EnemyTest enem;
 
     public float radiusAlert; 
 
@@ -75,6 +76,8 @@ public class RedZone : MonoBehaviour
             if (col.gameObject.CompareTag("Enemy"))
             {
                 col.GetComponent<EnemyTest>().isChasing = true;
+                enem = col.GetComponent<EnemyTest>();
+                Invoke("ToPatrol", 6);
             }
         }
     }
@@ -89,6 +92,11 @@ public class RedZone : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, radiusAlert);
+    }
+
+    void ToPatrol()
+    {
+        enem.isPatroling = true;
     }
 }
 
