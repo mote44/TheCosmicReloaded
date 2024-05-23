@@ -8,6 +8,7 @@ public class Noise_Alert : MonoBehaviour
     public Noise noise;
     public EnemyTest enem;
     public Transform target;
+    ParticleSystem part;
     [SerializeField] private float radius;
 
     private void Start()
@@ -15,6 +16,7 @@ public class Noise_Alert : MonoBehaviour
         
         //noise = GetComponent<Noise>();
         //ComeEnemy();
+        part = GetComponentInChildren<ParticleSystem>();
     }
 
     private void Update()
@@ -49,6 +51,7 @@ public class Noise_Alert : MonoBehaviour
     {
         Debug.Log("DestroyMina");
         AudioManager.instance.PlaySFX(20);   //QUE SUENE EN LOOP
+        if (part.isStopped) { part.Play(); }
 
         //GameObject.FindGameObjectsWithTag("Enemy");
         enem.LookAt(transform);

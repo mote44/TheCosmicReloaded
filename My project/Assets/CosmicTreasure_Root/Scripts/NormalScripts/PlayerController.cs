@@ -299,6 +299,7 @@ public class PlayerController : MonoBehaviour
         body.velocity = direction * walkSpeed;
         HandleSpriteFlip();
         SetSprite();
+        soundAreaParticle.startSize = 4.4f;
         soundAreaParticle.startColor = Color.red;
         if ((body.velocity.x != 0 || body.velocity.y != 0))
         {
@@ -316,6 +317,7 @@ public class PlayerController : MonoBehaviour
         body.velocity = direction * walkSpeedStealth;
         HandleSpriteFlipStealth();
         SetSpriteStealth();
+        soundAreaParticle.startSize =2;
         soundAreaParticle.startColor = Color.cyan;
         soundSource.mute = true;
         if ((body.velocity.x != 0 || body.velocity.y != 0))
