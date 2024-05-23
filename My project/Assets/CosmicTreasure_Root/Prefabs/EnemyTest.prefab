@@ -349,7 +349,7 @@ MonoBehaviour:
   agent: {fileID: -1801447180874530132}
   direction: {x: 0, y: 0}
   anim: {fileID: 0}
-  radiusAlert: 1.2
+  radiusAlert: 10.03
   fireRate: 1
   bullet: {fileID: 7265355007015163609, guid: 3dd63978d2379824e8e4189cea5d1cac, type: 3}
   bulletParent: {fileID: 2999779645531721337}
