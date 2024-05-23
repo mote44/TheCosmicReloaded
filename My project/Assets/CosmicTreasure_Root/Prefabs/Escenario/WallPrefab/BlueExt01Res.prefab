@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3794084401309855544}
   m_LocalRotation: {x: -0, y: -0, z: -0.258819, w: 0.9659259}
-  m_LocalPosition: {x: 46.16746, y: 45.50078, z: 0.11007281}
+  m_LocalPosition: {x: 6.3, y: -2, z: 0.11007281}
   m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1.1111112}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50,7 +50,7 @@ MonoBehaviour:
   pointToPlayer: {x: 0, y: 0}
   playerDistance: 0
   maxDistance: 0
-  keyNum: 2
+  keyNum: 0
   defaultLayer: 
   actionLayer: 
   actionAlpha: 0.25
@@ -88,7 +88,7 @@ Transform:
   m_Children:
   - {fileID: 4721542503954492233}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8871936191996525745
 SpriteRenderer:
@@ -235,7 +235,7 @@ MonoBehaviour:
   - {x: -8.478664, y: -9.193473, z: 0}
   m_ShapePathHash: -1991493253
   m_Mesh: {fileID: 0}
-  m_InstanceId: 1252448
+  m_InstanceId: 552282
   m_LocalBounds:
-    m_Center: {x: 0.3944626, y: -3.4084969, z: 0}
-    m_Extent: {x: 3.546257, y: 1.6895332, z: 0}
+    m_Center: {x: -0.9950552, y: -5.090554, z: 0}
+    m_Extent: {x: 8.348647, y: 4.1029186, z: 0}
