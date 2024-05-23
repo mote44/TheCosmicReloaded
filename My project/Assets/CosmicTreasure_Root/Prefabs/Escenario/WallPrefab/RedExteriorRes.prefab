@@ -31,8 +31,7 @@ Transform:
   m_LocalPosition: {x: 19.3, y: -32.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5217205260542069940}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -179,61 +178,7 @@ MonoBehaviour:
   - {x: 1.8763142, y: -1.975254, z: 0}
   m_ShapePathHash: 663344957
   m_Mesh: {fileID: 0}
-  m_InstanceId: 411906
+  m_InstanceId: 1255104
   m_LocalBounds:
     m_Center: {x: -0.54466057, y: -2.9139194, z: 0}
     m_Extent: {x: 2.4209747, y: 1.1908779, z: 0}
---- !u!1 &7234101290311414989
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5217205260542069940}
-  - component: {fileID: 2579395773427929314}
-  m_Layer: 0
-  m_Name: Ray1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5217205260542069940
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7234101290311414989}
-  m_LocalRotation: {x: -0, y: -0, z: 0.258819, w: 0.9659259}
-  m_LocalPosition: {x: 2.28, y: -1.87, z: 0.08915897}
-  m_LocalScale: {x: -0.90000004, y: 0.90000004, z: 0.9}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6679793620832487741}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
---- !u!114 &2579395773427929314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7234101290311414989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e419972eda5c24b8dc28df55246256, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  objectVector1: {x: 0, y: 0}
-  objectVector2: {x: 0, y: 0}
-  pointToPlayer: {x: 0, y: 0}
-  playerDistance: 0
-  maxDistance: 6.8
-  keyNum: 3
-  defaultLayer: BackLayer1
-  actionLayer: FrontLayer1
-  actionAlpha: 0.25
