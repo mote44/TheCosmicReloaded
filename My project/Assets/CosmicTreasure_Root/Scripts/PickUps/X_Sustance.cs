@@ -16,10 +16,11 @@ public class X_Sustance : MonoBehaviour
         {
             //AudioManager.instance.PlaySFX(46);
             //win.SetActive(true);
-            gameObject.SetActive(false);
+            
             walkie.currentAudio = 1;
             walkie.StartCoroutine("WalkieRoutine");
             escapeText.GetComponent<SpriteRenderer>().color = Color.green;
+            gameObject.SetActive(false);
 
             //Invoke("MusicEnd", 0.7f);
         }
