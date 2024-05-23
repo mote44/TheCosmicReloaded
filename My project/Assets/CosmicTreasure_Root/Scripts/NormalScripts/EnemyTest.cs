@@ -205,6 +205,14 @@ public class EnemyTest : MonoBehaviour
         EnemyStateManagement();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            EnemyAttack();
+        }
+    }
+
     private void AlertEnemies()
     {
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radiusAlert);
