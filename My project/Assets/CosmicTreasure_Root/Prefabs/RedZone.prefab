@@ -186,6 +186,7 @@ MonoBehaviour:
   startingPoint: 0
   playerPos: {fileID: 0}
   isDetected: 0
+  radiusAlert: 50
 --- !u!60 &1092769316440657696
 PolygonCollider2D:
   m_ObjectHideFlags: 0

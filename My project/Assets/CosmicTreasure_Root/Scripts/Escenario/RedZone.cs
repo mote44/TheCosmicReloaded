@@ -11,6 +11,9 @@ public class RedZone : MonoBehaviour
     [SerializeField] private int startingPoint;
     [SerializeField] Transform playerPos;
     [SerializeField] bool isDetected;
+
+    public float radiusAlert; 
+
     private void Start()
     {
         initialSpeed=speedMovement;
@@ -53,6 +56,7 @@ public class RedZone : MonoBehaviour
         if (collision.CompareTag("Player") && (collision.GetComponent<PlayerController>().direction.x != 0 || collision.GetComponent<PlayerController>().direction.y != 0))
         {
             isDetected = true;
+            AlertEnemies();
             Debug.Log("PlayerDetectedByLaser");
             //speedMovement = 0;
            
@@ -62,10 +66,29 @@ public class RedZone : MonoBehaviour
         }
     }
 
+    private void AlertEnemies()
+    {
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radiusAlert);
+        foreach (Collider2D col in hitColliders)
+        {
+
+            if (col.gameObject.CompareTag("Enemy"))
+            {
+                col.GetComponent<EnemyTest>().isChasing = true;
+            }
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         isDetected = false;
         speedMovement = initialSpeed;
+    }
+
+    void OnDrawGizmosSelected()      //Gizmo del radio del enemigo
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, radiusAlert);
     }
 }
 
