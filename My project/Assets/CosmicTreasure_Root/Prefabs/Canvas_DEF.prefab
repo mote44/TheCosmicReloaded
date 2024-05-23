@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
+  fov: {fileID: 0}
 --- !u!1 &402765802110921849
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,6 +2365,8 @@ GameObject:
   - component: {fileID: 2022582968814186656}
   - component: {fileID: 7717181863180623937}
   - component: {fileID: 8893764874878039731}
+  - component: {fileID: 2311497607041069174}
+  - component: {fileID: 9032693260332912800}
   m_Layer: 5
   m_Name: RetryButton (1)
   m_TagString: Untagged
@@ -2456,6 +2459,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2311497607041069174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398563045786084220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4ef6f5722a460459cffc52e735986b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9032693260332912800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398563045786084220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8dcf94967dc44f449f5aaa7c4f29c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7781620857154229176
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,6 +2923,7 @@ GameObject:
   - component: {fileID: 4208489857693967624}
   - component: {fileID: 5081178640466593010}
   - component: {fileID: 5056390588275190991}
+  - component: {fileID: 4345639596279824007}
   m_Layer: 5
   m_Name: RetryButton
   m_TagString: Untagged
@@ -2988,6 +3016,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4345639596279824007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8806325679522765719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67222b795797bf04b8867a17cb25b3ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8908347865629152077
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,6 +3039,7 @@ GameObject:
   - component: {fileID: 299412333892952759}
   - component: {fileID: 1597371930016931325}
   - component: {fileID: 8746691225256685239}
+  - component: {fileID: 6593732181808984197}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -3091,6 +3132,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6593732181808984197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908347865629152077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0ca2090c294cf44ab7851f05c7c003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9141323893916902384
 GameObject:
   m_ObjectHideFlags: 0
@@ -3313,11 +3366,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e938f9ca91adb45a07108a49c3b38c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enem: {fileID: 0}
   target: {fileID: 4873257479396735697, guid: 40d8a2e332f67634098b11c94ff2ca29, type: 3}
   noisePrefab: {fileID: 1476731850274728612, guid: 40d8a2e332f67634098b11c94ff2ca29, type: 3}
   enemy: {fileID: 7157609597813601379, guid: 97acd41542710cb4f8012e9af26a9391, type: 3}
   speed: 2
+  isDropped: 0
+  droppedNoiseInstancia: {fileID: 0}
   radius: 6.66
+  alert: {fileID: 0}
   firePoint: {fileID: 0}
 --- !u!1 &9204841409427573207
 GameObject:
