@@ -7,6 +7,8 @@ public class LoadLvl : MonoBehaviour
 {
     public GameObject retry;
 
+    public AudioSource audioSource;
+
     private void Start()
     {
         //MainMenu();
@@ -15,6 +17,7 @@ public class LoadLvl : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene("Level01");
+        audioSource.Stop();
         retry.SetActive(false);
     }
 }
