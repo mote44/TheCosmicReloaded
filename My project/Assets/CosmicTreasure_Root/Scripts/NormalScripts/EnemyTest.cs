@@ -10,13 +10,15 @@ public class EnemyTest : MonoBehaviour
     //CODEAR: ARREGLAR EL RANDOM PATROL, ANIMACION MUERTE PLAYER, QUE USE EL PATHFINDING PARA EL PATROL NORMAL
     // QUE ESPERE 3 SEG ENTRE PUNTO Y PUNTO EN EL PATROL, ARREGLAR LOS ESTADOS CUANDO HAY MÁS DE UN ENEMIGO
 
+    
+
     //Variables para los sonidos
     private bool isPlayed = false;
     private bool isPlayedPatrol = false;
     private bool isPlayedShot = false;
 
     EnemyDetectionSystem detection;
-     public EnemyTest[] enem;
+     public EnemyTest[] enemDetected;
     public GameObject lose;
 
     PlayerController playerController;
@@ -32,6 +34,7 @@ public class EnemyTest : MonoBehaviour
 
     [Header("Alert Enemies")]          //Que el enemigo alerte a sus compañeros
     public float radiusAlert;
+    //private EnemyTest[] enemyAlerted;
 
     [Header("Enemy Attributes")]
     public float fireRate = 1f;  //PARA QUE NO TE TIRE UNA RAFAGA DE TIROS
@@ -99,6 +102,9 @@ public class EnemyTest : MonoBehaviour
         transform.position = movementPoints[startingPoint].position;
         //randomNumber = Random.Range(0, movementPoints.Length);
         //spriteRenderer = GetComponent<SpriteRenderer>();
+        //alertedEnemNum = 0;
+
+        
     }
 
     private void Update()
@@ -213,34 +219,47 @@ public class EnemyTest : MonoBehaviour
         }
     }
 
-    private void AlertEnemies()
+    //private void AlertEnemies()
+    private IEnumerator AlertEnemies()
     {
+        //EnemyTest[] enemDet;
+        int i =0;
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radiusAlert);
         foreach (Collider2D col in hitColliders)
         {
-            
-            for (int i = 0; i < hitColliders.Length; i++)
+            if (col.gameObject.CompareTag("Enemy"))
             {
-                if (col.gameObject.CompareTag("Enemy"))
-                {
-                    col.GetComponent<EnemyTest>().isChasing = true; //Entra pero se atrampa
-                    //col.GetComponent<EnemyTest>().isPatroling = false;
-                   enem[i] = col.gameObject.GetComponent<EnemyTest>();
-                }
-                Invoke("ToPatrol", 6);
+
+                enemDetected[i] = col.GetComponent<EnemyTest>();
+                enemDetected[i].isChasing = true;
+                i++;
+
+
+
+                
+                //enemDet[i] = col.gameObject.GetComponent<EnemyTest>();
+                Debug.Log("LE LLEGA AL ENEMY LA ALERTA");
+                
+                //enemDetected[alertedEnemNum] = col.gameObject.GetComponent<EnemyTest>();
+                //col.gameObject.GetComponent<EnemyTest>().isChasing = true; //NO SALE DE PATROLING
+                
+               // col.gameObject.GetComponent<EnemyTest>().isChasing = false;
+                //col.gameObject.GetComponent<EnemyTest>().isPatroling = true;
             }
-           
+            //enemDet[i] = enemDetected[i];  
+
         }
+        yield return new WaitForSeconds(5);
+
+        for (int j = 0; j < enemDetected.Length; j++)
+        {
+            enemDetected[j].isChasing = false;
+
+        }
+
     }
 
-    void ToPatrol()
-    {
-        for (int i = 0; i < enem.Length;i++)
-        {
-            enem[i].isChasing = false;
-            enem[i].isPatroling = true;
-        }
-    }
+    
 
     void OnDrawGizmosSelected()      //Gizmo del radio del enemigo
     {
@@ -301,7 +320,7 @@ public class EnemyTest : MonoBehaviour
         if (Vector2.Distance(transform.position, movementPoints[i].position) < 0.02f)
         {
             i++; //Aumenta el índice, cambia de objetivo hacia el que moverse.
-            Debug.Log("i " + i);
+            //Debug.Log("i " + i);
             //  ESPERA 3 SEGUNDOS ANTES DE IR AL SIGUIENTE PUNTO
             if (i == movementPoints.Length) 
             {
@@ -320,7 +339,7 @@ public class EnemyTest : MonoBehaviour
     public void ChasePlayer(Vector2 target)
     {
         isPatroling = false;
-        AlertEnemies();
+        StartCoroutine("AlertEnemies");
         //Aquí NO puede ir isHearing = false
         LookAt(player.transform);
         agent.SetDestination(target);
