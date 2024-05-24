@@ -231,12 +231,11 @@ public class EnemyTest : MonoBehaviour
             {
 
                 enemDetected[i] = col.GetComponent<EnemyTest>();
-                enemDetected[i].isChasing = true;
+                enemDetected[i].isHearing = true;
+                Debug.Log("LIST " + enemDetected[i]);
                 i++;
 
 
-
-                
                 //enemDet[i] = col.gameObject.GetComponent<EnemyTest>();
                 Debug.Log("LE LLEGA AL ENEMY LA ALERTA");
                 
@@ -249,11 +248,21 @@ public class EnemyTest : MonoBehaviour
             //enemDet[i] = enemDetected[i];  
 
         }
+        
         yield return new WaitForSeconds(5);
 
         for (int j = 0; j < enemDetected.Length; j++)
         {
-            enemDetected[j].isChasing = false;
+            
+            enemDetected[j].isHearing = false;
+            
+
+        }
+        for (int j = 0; j < enemDetected.Length; j++)
+        {
+
+            if (enemDetected[j] != null) { enemDetected[j] = null; }
+               
 
         }
 
