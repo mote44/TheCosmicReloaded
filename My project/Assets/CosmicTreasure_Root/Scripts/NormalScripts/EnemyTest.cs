@@ -222,7 +222,7 @@ public class EnemyTest : MonoBehaviour
     //private void AlertEnemies()
     private IEnumerator AlertEnemies()
     {
-        //EnemyTest[] enemDet;
+        
         int i =0;
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, radiusAlert);
         foreach (Collider2D col in hitColliders)
@@ -235,17 +235,10 @@ public class EnemyTest : MonoBehaviour
                 Debug.Log("LIST " + enemDetected[i]);
                 i++;
 
-
-                //enemDet[i] = col.gameObject.GetComponent<EnemyTest>();
                 Debug.Log("LE LLEGA AL ENEMY LA ALERTA");
-                
-                //enemDetected[alertedEnemNum] = col.gameObject.GetComponent<EnemyTest>();
-                //col.gameObject.GetComponent<EnemyTest>().isChasing = true; //NO SALE DE PATROLING
-                
-               // col.gameObject.GetComponent<EnemyTest>().isChasing = false;
-                //col.gameObject.GetComponent<EnemyTest>().isPatroling = true;
+
             }
-            //enemDet[i] = enemDetected[i];  
+             
 
         }
         
@@ -253,16 +246,14 @@ public class EnemyTest : MonoBehaviour
 
         for (int j = 0; j < enemDetected.Length; j++)
         {
-            
-            enemDetected[j].isHearing = false;
-            
+
+            if (enemDetected[j] != null) { enemDetected[j].isHearing = false; }
 
         }
         for (int j = 0; j < enemDetected.Length; j++)
         {
 
-            if (enemDetected[j] != null) { enemDetected[j] = null; }
-               
+            if (enemDetected[j] != null) { enemDetected[j] = null; }      
 
         }
 

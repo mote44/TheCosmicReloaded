@@ -12,6 +12,7 @@ public class LoadLvl : MonoBehaviour
     private void Start()
     {
         //MainMenu();
+        audioSource = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>();
     }
 
     public void Retry()
